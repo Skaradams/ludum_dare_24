@@ -16,7 +16,7 @@ class Level1(Level):
         res_width, res_height = resolution
         super(Level1, self).__init__(camera_config={
             'target': (50, -21),
-            'width': 6,
+            'width': 40,
             'rect': Rect((10, 10), (res_width - 20, res_height - 20)),
             'limits': {'left': 0.0, 'bottom': 0.0,
                        'right': 70.0, 'top': 10.0}
@@ -52,9 +52,10 @@ class Level1(Level):
         )
 
         # Create Actor 
-        rat_datas = self.loader().get_width_from_ratio('sprite.rat.stance_01', level['characterstart']['width'])
+        rat_datas = self.loader().get_width_from_ratio('sprite.rat.stance_01', level['characterstart']['height'])
+        print "RAT SIZE : ", rat_datas
         rat = Rat(position=(level['characterstart']['x'], level['characterstart']['y']), size=(rat_datas[0], rat_datas[1]))
-        rat.set_hitbox
+        rat.set_hitbox({'left': 17.0})
         self.add_chunk(rat, self.SPRITES)
 
         # Lock camera to Rat

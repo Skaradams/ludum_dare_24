@@ -10,7 +10,7 @@ class Rat(Actor):
             'sprite.rat', 'stance', position, size
         )
         self._walk_vel = 3.0
-        self._run_multiple = 1.5
+        self._run_multiple = 1
         self._x_vel = 0
 
         self.listen_key('right')
@@ -19,10 +19,13 @@ class Rat(Actor):
 
     def update(self):
         super(Rat, self).update()
-        self.set_x_velocity(self._x_vel)
+        self.set_x_velocity(self._x_vel*self._run_multiple)
 
     def on_right_pressed(self):
         self._x_vel += self._walk_vel
+
+    def on_right_released(self):
+        self._x_vel -= self._walk_vel
     
     def on_collision(self, chunk, point):
         pass
