@@ -24,7 +24,8 @@ def run():
     loader.load_package('static')
     loader.load_package('sprite')
     loader.load_package('svg_json')
-
+    loader.load_package('music')
+    
     game.navigator().set_current_view(Level1(RESOLUTION))
     game.run()
 
