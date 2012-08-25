@@ -26,6 +26,8 @@ class Level1(Level):
         self.listen('quit')
         # Load resources
 
+        self.loader().load_package('svg_json')
+        print self.loader().get_raw_resource('svg_json.level_1')
         # Add background (filled with skyblue)
         self.add_layer(
             Layer(position=(0, 0), size=resolution).fill('87CEEB'),
