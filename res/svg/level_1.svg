@@ -1,31 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Espace" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="5999.529px" height="2199.463px" viewBox="0 0 5999.529 2199.463" enable-background="new 0 0 5999.529 2199.463"
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="5999.529px" height="2199.46px" viewBox="0 0 5999.529 2199.46" enable-background="new 0 0 5999.529 2199.46"
 	 xml:space="preserve">
-<g id="Level_x5F_1">
-	
-		<rect id="ground_x5F_cage_x5F_1_1_" x="0" y="2065.374" stroke="#000000" stroke-miterlimit="10" width="1005.547" height="134.087"/>
-	
-		<rect id="ground_x5F_cage_x5F_2" x="1005.547" y="2065.374" stroke="#000000" stroke-miterlimit="10" width="1001.797" height="134.087"/>
-	
-		<rect id="ground_x5F_cage_x5F_3_1_" x="4010.936" y="2065.374" stroke="#000000" stroke-miterlimit="10" width="1001.796" height="134.089"/>
-	
-		<rect id="ground_x5F_cage_x5F_1" x="5012.733" y="2065.374" stroke="#000000" stroke-miterlimit="10" width="986.795" height="134.089"/>
-	
-		<rect id="ground_x5F_cage_x5F_3" x="3009.14" y="2065.374" stroke="#000000" stroke-miterlimit="10" width="1001.796" height="134.089"/>
-	
-		<rect id="ground_x5F_cage_x5F_4" x="2007.343" y="2065.374" stroke="#000000" stroke-miterlimit="10" width="1001.796" height="134.089"/>
-	
-		<rect id="character_x5F_start" x="559.751" y="1582.552" fill="#7CD2E2" stroke="#000000" stroke-miterlimit="10" width="101.976" height="482.822"/>
-	
-		<rect id="platform_x5F_1" x="2226.855" y="1823.963" fill="#6FBF58" stroke="#000000" stroke-miterlimit="10" width="767.285" height="241.41"/>
-	
-		<rect id="platform_x5F_3" x="2994.14" y="1582.552" fill="#6FBF58" stroke="#000000" stroke-miterlimit="10" width="766.744" height="482.822"/>
-	
-		<rect id="platform_x5F_2" x="3760.884" y="1341.142" fill="#6FBF58" stroke="#000000" stroke-miterlimit="10" width="2070.644" height="724.232"/>
-	
-		<rect id="end" x="5355.751" y="1099.731" fill="#FBD849" stroke="#000000" stroke-miterlimit="10" width="150.38" height="241.41"/>
-</g>
+<rect id="ground_x5F_cage_x5F_1_1_" x="-5.836" y="2064.967" stroke="#000000" stroke-miterlimit="10" width="1005.547" height="134.087"/>
+<rect id="ground_x5F_cage_x5F_2" x="999.711" y="2064.967" stroke="#000000" stroke-miterlimit="10" width="1001.796" height="134.087"/>
+<rect id="ground_x5F_cage_x5F_3_1_" x="4005.1" y="2064.967" stroke="#000000" stroke-miterlimit="10" width="1001.797" height="134.089"/>
+<rect id="ground_x5F_cage_x5F_1" x="5006.896" y="2064.967" stroke="#000000" stroke-miterlimit="10" width="986.797" height="134.089"/>
+<rect id="ground_x5F_cage_x5F_3" x="3003.304" y="2064.967" stroke="#000000" stroke-miterlimit="10" width="1001.796" height="134.089"/>
+<rect id="ground_x5F_cage_x5F_4" x="2001.507" y="2064.967" stroke="#000000" stroke-miterlimit="10" width="1001.797" height="134.089"/>
+<rect id="character_x5F_start" x="553.916" y="1582.145" fill="#7CD2E2" stroke="#000000" stroke-miterlimit="10" width="101.976" height="482.822"/>
+<rect id="platform_x5F_cage_x5F_1" x="2221.019" y="1823.556" fill="#6FBF58" stroke="#000000" stroke-miterlimit="10" width="767.285" height="241.41"/>
+<rect id="platform_x5F_cage_x5F_2" x="3755.049" y="1340.734" fill="#6FBF58" stroke="#000000" stroke-miterlimit="10" width="2070.644" height="724.232"/>
+<rect id="platform_x5F_cage_x5F_3" x="2988.304" y="1582.145" fill="#6FBF58" stroke="#000000" stroke-miterlimit="10" width="766.745" height="482.822"/>
+<rect id="end" x="5349.915" y="1099.324" fill="#FBD849" stroke="#000000" stroke-miterlimit="10" width="150.38" height="241.41"/>
 </svg>
