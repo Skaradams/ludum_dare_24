@@ -19,7 +19,9 @@ def run():
         os.path.join(os.path.dirname(__file__), 'res'),
         fps=FPS
     )
+
     loader = ResourceLoader()
+    loader.load_package('static')
     loader.load_package('svg_json')
     print os.path.abspath(os.path.join(os.path.dirname(__file__), 'res'))
     game.navigator().set_current_view(Level1(RESOLUTION))

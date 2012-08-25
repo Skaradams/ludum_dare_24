@@ -7,7 +7,7 @@ class Rat(Actor):
 
     def __init__(self, position, size):
         super(Rat, self).__init__(
-            'platform.sprites.rat', 'stance', position, size
+            'static.sprites.rat', 'stance', position, size
         )
         self.listen_key('right')
         self.listen_key('left')
