@@ -5,16 +5,9 @@ sys.path.insert(0, os.path.abspath(
     os.path.join(os.path.dirname(__file__), 'bloodyhell')
 ))
 
-
+from bloodyhell.resourceloader import ResourceLoader
 from bloodyhell.game import Game
 from levels.level1 import Level1
-
-from bloodyhell.layer.rect import Rect
-from bloodyhell.layer import Layer
-from bloodyhell.world.actor import Actor
-from bloodyhell.world.fence import Fence
-from bloodyhell.widget.interface import Interface
-
 
 RESOLUTION = (800, 600)
 FPS = 25
@@ -26,6 +19,10 @@ def run():
         os.path.join(os.path.dirname(__file__), 'res'),
         fps=FPS
     )
+
+    loader = ResourceLoader()
+    loader.load_package('static')
+    loader.load_package('svg_json')
     print os.path.abspath(os.path.join(os.path.dirname(__file__), 'res'))
     game.navigator().set_current_view(Level1(RESOLUTION))
     game.run()
