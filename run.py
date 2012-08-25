@@ -1,8 +1,8 @@
 import os
 import sys
 
-sys.path.append(os.path.abspath(
-    os.path.join(os.path.dirname(__file__), '..', 'bloodyhell')
+sys.path.insert(0, os.path.abspath(
+    os.path.join(os.path.dirname(__file__), 'bloodyhell')
 ))
 
 
@@ -26,6 +26,7 @@ def run():
         os.path.join(os.path.dirname(__file__), 'res'),
         fps=FPS
     )
+    print os.path.abspath(os.path.join(os.path.dirname(__file__), 'res'))
     game.navigator().set_current_view(Level1(RESOLUTION))
     game.run()
 
