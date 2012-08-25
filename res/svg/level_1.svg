@@ -4,15 +4,18 @@
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="5999.529px" height="2199.46px" viewBox="0 0 5999.529 2199.46" enable-background="new 0 0 5999.529 2199.46"
 	 xml:space="preserve">
-<rect id="groundcage1" x="-5.836" y="2064.967" stroke="#000000" stroke-miterlimit="10" width="1005.547" height="134.087"/>
-<rect id="groundcage2" x="999.711" y="2064.967" stroke="#000000" stroke-miterlimit="10" width="1001.796" height="134.087"/>
-<rect id="groundcage3" x="4005.1" y="2064.967" stroke="#000000" stroke-miterlimit="10" width="1001.797" height="134.089"/>
-<rect id="groundcage1_1_" x="5006.896" y="2064.967" stroke="#000000" stroke-miterlimit="10" width="986.797" height="134.089"/>
-<rect id="groundcage3_1_" x="3003.304" y="2064.967" stroke="#000000" stroke-miterlimit="10" width="1001.796" height="134.089"/>
-<rect id="groundcage4" x="2001.507" y="2064.967" stroke="#000000" stroke-miterlimit="10" width="1001.797" height="134.089"/>
-<rect id="characterstart" x="553.916" y="1582.145" fill="#7CD2E2" stroke="#000000" stroke-miterlimit="10" width="101.976" height="482.822"/>
-<rect id="platformcage1" x="2221.019" y="1823.556" fill="#6FBF58" stroke="#000000" stroke-miterlimit="10" width="767.285" height="241.41"/>
-<rect id="platformcage2" x="3755.049" y="1340.734" fill="#6FBF58" stroke="#000000" stroke-miterlimit="10" width="2070.644" height="724.232"/>
-<rect id="platformcage3" x="2988.304" y="1582.145" fill="#6FBF58" stroke="#000000" stroke-miterlimit="10" width="766.745" height="482.822"/>
-<rect id="end" x="5349.915" y="1099.324" fill="#FBD849" stroke="#000000" stroke-miterlimit="10" width="150.38" height="241.41"/>
+<rect id="groundcage1" x="0" y="2065.373" stroke="#000000" stroke-miterlimit="10" width="1005.547" height="134.087"/>
+<rect id="groundcage2" x="1005.546" y="2065.373" stroke="#000000" stroke-miterlimit="10" width="1001.797" height="134.087"/>
+<rect id="groundcage3" x="4010.936" y="2065.373" stroke="#000000" stroke-miterlimit="10" width="1001.797" height="134.089"/>
+<rect id="groundcage1_1_" x="5012.732" y="2065.373" stroke="#000000" stroke-miterlimit="10" width="986.797" height="134.089"/>
+<rect id="groundcage3_1_" x="3009.139" y="2065.373" stroke="#000000" stroke-miterlimit="10" width="1001.797" height="134.089"/>
+<rect id="groundcage4" x="2007.342" y="2065.373" stroke="#000000" stroke-miterlimit="10" width="1001.796" height="134.089"/>
+<rect id="characterstart" x="559.751" y="1582.551" fill="#7CD2E2" stroke="#000000" stroke-miterlimit="10" width="101.976" height="482.822"/>
+<rect id="end" x="5355.75" y="1099.73" fill="#FBD849" stroke="#000000" stroke-miterlimit="10" width="150.381" height="241.41"/>
+<rect id="platformcage1_2_" x="3314.326" y="1823.965" fill="#6FBF58" stroke="#000000" stroke-miterlimit="10" width="383.643" height="241.41"/>
+<rect id="platformcage3_2_" x="5232.121" y="1341.141" fill="#6FBF58" stroke="#000000" stroke-miterlimit="10" width="766.746" height="724.232"/>
+<rect id="platformcage2_5_" x="4081.342" y="1582.549" fill="#6FBF58" stroke="#000000" stroke-miterlimit="10" width="383.372" height="482.826"/>
+<rect id="platformcage3_1_" x="4464.052" y="1341.141" fill="#6FBF58" stroke="#000000" stroke-miterlimit="10" width="766.745" height="724.232"/>
+<rect id="platformcage2_2_" x="3697.969" y="1582.549" fill="#6FBF58" stroke="#000000" stroke-miterlimit="10" width="383.373" height="482.826"/>
+<rect id="platformcage1_4_" x="2930.685" y="1823.965" fill="#6FBF58" stroke="#000000" stroke-miterlimit="10" width="383.642" height="241.41"/>
 </svg>
