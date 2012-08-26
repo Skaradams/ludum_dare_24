@@ -12,8 +12,9 @@ from platforms.hurtingfloor import *
 from platforms.start import Start
 from platforms.flag import Flag
 
+from pill import *
 from rat import Rat
-from evolutions.grasshoper import GrassHoper
+from evolutions.grasshopper import GrassHopper
 
 class Lab(Level):
     
@@ -47,7 +48,8 @@ class Lab(Level):
             'platformcage4': PlatformCage4,
             'characterstart': Start,
             'end': Flag,
-            'spades': Spades
+            'spades': Spades,
+            'pillevolutionb': GrassHopperPill
         }        
                 
         # Add background (filled with grey)

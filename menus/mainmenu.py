@@ -7,7 +7,7 @@ from bloodyhell.view import Layer
 from bloodyhell.widget import Widget
 from bloodyhell.widget.interface import Interface
 
-from levels.lab import Lab1
+from levels.lab import *
 
 
 class MainMenu(View):
@@ -78,7 +78,7 @@ class MainMenu(View):
 
     def play(self):
         self._navigator.set_current_view(
-            Lab1(Widget.get_resolution(), self._navigator)
+            Lab2(Widget.get_resolution(), self._navigator)
         )
 
     def on_return_pressed(self):
