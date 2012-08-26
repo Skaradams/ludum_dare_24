@@ -41,14 +41,14 @@ class Lab(Level):
             'groundcage2': GroundCage2,
             'groundcage3': GroundCage3,
             'groundcage4': GroundCage4,
-            # 'platformcage1': PlatformCage1,
-            # 'platformcage2': PlatformCage2,
+            'platformcage1': PlatformCage1,
+            'platformcage2': PlatformCage2,
             'characterstart': Start,
             'end': Flag,
             'spades': Spades
         }        
                 
-        # Add background (filled with skyblue)
+        # Add background (filled with grey)
         self.add_layer(
             Layer(position=(0, 0), size=resolution).fill('191919'),
             self.BACKGROUND
@@ -58,6 +58,7 @@ class Lab(Level):
         sys.exit()
 
     def add_chunks(self):
+        print "ADDING CHUNKS FOR : " + self.__class__.__name__
         for rect_id in self._level:
             data = self._level[rect_id]
             self.add_platform(rect_id.split('_')[0], data)
@@ -89,11 +90,13 @@ class Lab(Level):
 
     def on_frame(self, delta):
         super(Lab, self).on_frame(delta)
+        print self, self._next_level
         if self._end.contains(self._rat) and self._next_level != None:
             self._navigator.set_current_view(self._next_level(self._resolution, self._navigator))
 
 class Lab1(Lab):
     def __init__(self, resolution, navigator):
+        print "I AM LEVEL 1"
         super(Lab1, self).__init__(resolution, navigator)
         self._level = self.loader().get_raw_resource('svg_json.level_1')
         self._next_level = Lab2
