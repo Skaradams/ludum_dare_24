@@ -3,35 +3,36 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="8998.38px" height="2764px" viewBox="0 0 8998.38 2764" enable-background="new 0 0 8998.38 2764" xml:space="preserve">
-<rect id="characterstart_1_" x="563.044" y="1669.53" fill="#7CD2E2" stroke="#000000" stroke-miterlimit="10" width="101.976" height="482.822"/>
-<rect id="end_1_" x="8474.139" y="1545.362" fill="#FBD849" stroke="#000000" stroke-miterlimit="10" width="150.38" height="241.41"/>
-<rect id="door" x="2271.145" fill="#BD2329" stroke="#000000" stroke-miterlimit="10" width="228.092" height="1137.915"/>
-<rect id="hole" x="4999.15" y="1905.353" fill="#BF1C5C" stroke="#000000" stroke-miterlimit="10" width="1999.844" height="493.066"/>
-<rect id="groundcage1_24_" x="3999.229" y="2152.353" stroke="#000000" stroke-miterlimit="10" width="999.921" height="365.581"/>
-<rect id="groundcage1_23_" x="4999.15" y="2398.419" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.581"/>
-<rect id="groundcage1_6_" x="5999.072" y="2398.42" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.581"/>
-<rect id="groundcage1_26_" x="7997.994" y="2152.353" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.581"/>
-<rect id="groundcage1_25_" x="6999.455" y="1786.772" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.58"/>
-<rect id="groundcage1_22_" x="7998.455" y="1786.772" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.58"/>
-<rect id="platformcage1_3_" x="4564.15" y="1905.353" fill="#70BF58" stroke="#000000" stroke-miterlimit="10" width="435" height="247"/>
-<rect id="platformcage1_7_" x="4129.148" y="1905.353" fill="#70BF58" stroke="#000000" stroke-miterlimit="10" width="435" height="247"/>
-<rect id="platformcage1_87_" x="3694.148" y="1905.353" fill="#70BF58" stroke="#000000" stroke-miterlimit="10" width="435" height="247"/>
-<rect id="platformcage1_8_" x="3259.147" y="1905.353" fill="#70BF58" stroke="#000000" stroke-miterlimit="10" width="435" height="247"/>
-<rect id="groundcage1_2_" x="-0.458" y="2152.353" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.581"/>
-<rect id="groundcage1_20_" x="2999.307" y="2152.353" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.581"/>
-<rect id="groundcage1_3_" x="999.463" y="2152.353" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.581"/>
-<rect id="groundcage1_21_" x="1999.385" y="2152.353" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.581"/>
-<rect id="groundcage1_51_" x="3999.229" y="2517.934" stroke="#000000" stroke-miterlimit="10" width="999.921" height="365.581"/>
-<rect id="groundcage1_55_" x="-0.458" y="2517.934" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.581"/>
-<rect id="groundcage1_54_" x="2999.307" y="2517.934" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.581"/>
-<rect id="groundcage1_53_" x="999.463" y="2517.934" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.581"/>
-<rect id="groundcage1_52_" x="1999.385" y="2517.934" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.581"/>
-<rect id="groundcage1_57_" x="6999.916" y="2517.934" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.581"/>
-<rect id="groundcage1_56_" x="7998.917" y="2517.934" stroke="#000000" stroke-miterlimit="10" width="999.921" height="365.581"/>
-<rect id="spades_8_" x="4999.15" y="2355.577" fill="#C94A96" stroke="#000000" stroke-miterlimit="10" width="435" height="42.842"/>
-<rect id="spades_13_" x="5434.15" y="2355.577" fill="#C94A96" stroke="#000000" stroke-miterlimit="10" width="435" height="42.842"/>
-<rect id="spades_16_" x="5869.15" y="2355.577" fill="#C94A96" stroke="#000000" stroke-miterlimit="10" width="435" height="42.842"/>
-<rect id="spades_14_" x="6304.15" y="2355.577" fill="#C94A96" stroke="#000000" stroke-miterlimit="10" width="435" height="42.842"/>
-<rect id="spades_17_" x="6739.15" y="2355.577" fill="#C94A96" stroke="#000000" stroke-miterlimit="10" width="435" height="42.842"/>
-<rect id="groundcage1_5_" x="6998.994" y="2152.353" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.581"/>
+<rect id="characterstart_1_" x="562.218" y="1669.53" fill="#7CD2E2" stroke="#000000" stroke-miterlimit="10" width="101.976" height="482.822"/>
+<rect id="end_1_" x="8473.314" y="1545.362" fill="#FBD849" stroke="#000000" stroke-miterlimit="10" width="150.38" height="241.41"/>
+<rect id="door-1" x="2270.319" fill="#BD2329" stroke="#000000" stroke-miterlimit="10" width="228.092" height="1137.916"/>
+<rect id="hole" x="4998.325" y="1905.353" fill="#BF1C5C" stroke="#000000" stroke-miterlimit="10" width="1999.845" height="493.067"/>
+<rect id="groundcage1_24_" x="3998.403" y="2152.353" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.581"/>
+<rect id="groundcage1_23_" x="4998.325" y="2398.42" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.58"/>
+<rect id="groundcage1_6_" x="5998.247" y="2398.42" stroke="#000000" stroke-miterlimit="10" width="999.923" height="365.581"/>
+<rect id="groundcage1_26_" x="7997.17" y="2152.353" stroke="#000000" stroke-miterlimit="10" width="999.921" height="365.581"/>
+<rect id="groundcage1_25_" x="6998.63" y="1786.772" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.58"/>
+<rect id="groundcage1_22_" x="7997.63" y="1786.772" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.58"/>
+<rect id="platformcage1_3_" x="4563.324" y="1905.353" fill="#70BF58" stroke="#000000" stroke-miterlimit="10" width="435" height="247"/>
+<rect id="platformcage1_7_" x="4128.323" y="1905.353" fill="#70BF58" stroke="#000000" stroke-miterlimit="10" width="435" height="247"/>
+<rect id="platformcage1_87_" x="3693.322" y="1905.353" fill="#70BF58" stroke="#000000" stroke-miterlimit="10" width="435" height="247"/>
+<rect id="platformcage1_8_" x="3258.321" y="1905.353" fill="#70BF58" stroke="#000000" stroke-miterlimit="10" width="435" height="247"/>
+<rect id="groundcage1_2_" x="-1.284" y="2152.353" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.581"/>
+<rect id="groundcage1_20_" x="2998.481" y="2152.353" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.581"/>
+<rect id="groundcage1_3_" x="998.638" y="2152.353" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.581"/>
+<rect id="groundcage1_21_" x="1998.56" y="2152.353" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.581"/>
+<rect id="groundcage1_51_" x="3998.403" y="2517.934" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.581"/>
+<rect id="groundcage1_55_" x="-1.284" y="2517.934" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.581"/>
+<rect id="groundcage1_54_" x="2998.481" y="2517.934" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.581"/>
+<rect id="groundcage1_53_" x="998.638" y="2517.934" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.581"/>
+<rect id="groundcage1_52_" x="1998.56" y="2517.934" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.581"/>
+<rect id="groundcage1_57_" x="6999.091" y="2517.934" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.581"/>
+<rect id="groundcage1_56_" x="7998.091" y="2517.934" stroke="#000000" stroke-miterlimit="10" width="999.922" height="365.581"/>
+<rect id="spades_8_" x="4998.325" y="2355.577" fill="#C94A96" stroke="#000000" stroke-miterlimit="10" width="435" height="42.843"/>
+<rect id="spades_13_" x="5433.325" y="2355.577" fill="#C94A96" stroke="#000000" stroke-miterlimit="10" width="435" height="42.843"/>
+<rect id="spades_16_" x="5868.325" y="2355.577" fill="#C94A96" stroke="#000000" stroke-miterlimit="10" width="435" height="42.843"/>
+<rect id="spades_14_" x="6303.325" y="2355.577" fill="#C94A96" stroke="#000000" stroke-miterlimit="10" width="435" height="42.843"/>
+<rect id="spades_17_" x="6738.325" y="2355.577" fill="#C94A96" stroke="#000000" stroke-miterlimit="10" width="435" height="42.843"/>
+<rect id="groundcage1_5_" x="6998.17" y="2152.353" stroke="#000000" stroke-miterlimit="10" width="999.921" height="365.581"/>
+<rect id="trigger-1" x="835.396" y="1669.53" fill="#29B459" stroke="#000000" stroke-miterlimit="10" width="289.105" height="482.822"/>
 </svg>
