@@ -38,7 +38,7 @@ class Rat(Actor):
         self._x_vel += self._walk_vel
 
     def on_space_pressed(self):
-        if self.get_y_velocity() == 0.0:
+        if int(self.get_y_velocity()) == 0:
             self.set_y_velocity(self._jump_vel)
 
     def on_space_released(self):
