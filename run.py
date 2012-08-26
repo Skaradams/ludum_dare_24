@@ -7,7 +7,7 @@ sys.path.insert(0, os.path.abspath(
 
 from bloodyhell.resourceloader import ResourceLoader
 from bloodyhell.game import Game
-from levels.level1 import Level1
+from levels.lab import *
 
 RESOLUTION = (800, 600)
 FPS = 25
@@ -25,8 +25,9 @@ def run():
     loader.load_package('sprite')
     loader.load_package('svg_json')
     loader.load_package('music')
-    
-    game.navigator().set_current_view(Level1(RESOLUTION))
+
+    navigator = game.navigator()
+    navigator.set_current_view(Lab1(RESOLUTION, navigator))
     game.run()
 
 if __name__ == '__main__':

@@ -25,10 +25,11 @@ class Rat(Actor):
 
     def on_right_pressed(self):
         self._x_vel += self._walk_vel
+        self.loop('walk')
 
     def on_right_released(self):
         self._x_vel -= self._walk_vel
-    
+        self.loop('stance')
     def on_left_pressed(self):
         self._x_vel -= self._walk_vel
 
