@@ -20,3 +20,7 @@ class PlatformCage2(PlatformCage):
 class PlatformCage3(PlatformCage):
     def __init__(self, data):
         super(PlatformCage3, self).__init__(3, data)
+
+class PlatformCage4(PlatformCage):
+    def __init__(self, data):
+        super(PlatformCage4, self).__init__(4, data)

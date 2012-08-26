@@ -20,12 +20,14 @@ class Rat(Actor):
 
         self._right_on = False
         self._left_on = False
-
+        
+        self._orientation = "right"
+        self._pace = "stance"
+        self._running = False
         self.listen_key('right')
         self.listen_key('left')
         self.listen_key('space')
-        self.listen_key('lshift')
-        self.listen_key('rshift')
+        self.listen_key('lshift')   
 
     def update(self):
         super(Rat, self).update()
@@ -39,39 +41,97 @@ class Rat(Actor):
 
     def on_right_pressed(self):
         self._right_on = True
-        self.loop('walk')
+        if self._pace != "jump":
+            if self._left_on:
+               self._pace = "stance" 
+            else:
+                if self._pace == "stance" and self._running:
+                    self._pace = "run"
+                else:
+                    self._pace = "walk"
+
+            if not self._left_on:
+                self._orientation = "right"
+            else:
+                self._orientation = "left"
+        self.animate()
 
     def on_right_released(self):
         self._right_on = False
-        self.loop('stance')
+        if self._left_on:
+            self._orientation = "left"
+            if self._running:
+                self._pace = 'run'
+            else:
+                self._pace = 'walk'
+        else:    
+            self._pace = "stance"
+        self.animate()    
 
     def on_left_pressed(self):
         self._left_on = True
+        
+        if self._pace != "jump":
+            if self._right_on:
+               self._pace = "stance" 
+            else:
+                if self._pace == "stance" and self._running:
+                    self._pace = "run"
+                else:
+                    self._pace = "walk"
+
+            if not self._right_on:
+                self._orientation = "left"
+            else:
+                self._orientation = "right"
+        self.animate()
 
     def on_left_released(self):
         self._left_on = False
+        if self._right_on:
+            self._orientation = "right"
+            if self._running:
+                self._pace = 'run'
+            else:
+                self._pace = 'walk'
+        else:    
+            self._pace = "stance"
+        self.animate()    
 
     def on_space_pressed(self):
-        if int(self.get_y_velocity()) == 0:
+        if self.get_y_velocity() == 0.0:
+            self._pace = 'jump'
             self.set_y_velocity(self._jump_vel)
+            self.animate()
 
     def on_space_released(self):
         pass
 
     def on_lshift_pressed(self):
         self._run_multiple = 4
+        self._running = True
+
+        self.animate()
 
     def on_lshift_released(self):
         self._run_multiple = 1
-
-    def on_rshift_pressed(self):
-        print "RSHIFT"
-        # print self._level.reset(self._level.resolution(), self._level.navigator())
-
-    def on_rshift_released(self):
-        pass
+        self._running = False
+        self.animate()
 
     def on_collision(self, chunk, point):
         if chunk.__class__ == Spades:
             self._level.reset(self._level.resolution(), self._level.navigator())
+        else:
+            if not self._right_on and not self._left_on:
+                self._pace = 'stance'
+            elif self._running:
+                self._pace = 'run'
+            elif self._right_on or self._left_on:
+                self._pace = 'walk'
+            self.animate()
 
+    def animate(self):
+        if self._orientation == "left":
+            self.loop(self._pace+"_left")
+        else:
+            self.loop(self._pace)
