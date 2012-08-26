@@ -83,10 +83,9 @@ class Lab(Level):
 
     def on_frame(self, delta):
         super(Lab, self).on_frame(delta)
-        print self
         if self._end.contains(self._rat) and self._next_level != None:
-            print 'salut'
-            self._navigator.set_current_view(self._next_level(self._resolution, self._navigator))
+            pass
+            # self._navigator.set_current_view(self._next_level(self._resolution, self._navigator))
 
 class Lab1(Lab):
     def __init__(self, resolution, navigator):
