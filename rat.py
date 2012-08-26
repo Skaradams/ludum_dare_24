@@ -3,7 +3,7 @@ from platforms.hurtingfloor import *
 
 class Rat(Actor):
 
-    def __init__(self, position, size, level, evolution='rat'):
+    def __init__(self, position, size, level, evolution='lumi'):
         super(Rat, self).__init__(
             evolution, 'stance', position, size
         )
@@ -67,6 +67,7 @@ class Rat(Actor):
         self.animate()    
 
     def on_left_pressed(self):
+        print self
         self._left_on = True
         
         if self._pace != "jump":

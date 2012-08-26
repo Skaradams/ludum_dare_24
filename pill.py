@@ -1,6 +1,9 @@
 from bloodyhell.world.decoration import Decoration
 
 class Pill(Decoration):
+    pill_instances = {
+        'grasshopper': []
+    }
     def __init__(self, data, image_id):
         self._x = data['x']
         self._y = data['y']
@@ -11,3 +14,4 @@ class Pill(Decoration):
 class GrassHopperPill(Pill):
     def __init__(self, data):
         super(GrassHopperPill, self).__init__(data, 'static.pill_grasshopper')
+        Pill.pill_instances['grasshopper'].append(self)

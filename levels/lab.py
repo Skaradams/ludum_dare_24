@@ -79,6 +79,7 @@ class Lab(Level):
 
             if chunk_id == "spades":
                 self._hurting_floors.append(chunk)
+
             super(Lab, self).add_chunk(chunk, self.BACKGROUND)
 
     def add_rat(self):
@@ -108,6 +109,15 @@ class Lab(Level):
         super(Lab, self).on_frame(delta)
         if self._rat.contains(self._end) and self._next_level != None:
             self._navigator.set_current_view(self._next_level(self._resolution, self._navigator))
+
+        for pill in Pill.pill_instances['grasshopper']:
+            if self._rat.contains(pill):
+                print 'pill contains dude'
+                new_rat = GrassHopper(position=(self._rat.position()[0]+20.0, self._rat.position()[1]+20.0), size=self._rat.position(), level=self)
+                
+                # TODO Remove with actor method
+                self.remove_layer(self._rat.layer())
+                self._rat = new_rat
 
 class Lab1(Lab):
     def __init__(self, resolution, navigator):
