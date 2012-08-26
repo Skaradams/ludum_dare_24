@@ -39,13 +39,13 @@ class InGameMenu(View):
         top = 35 + self._choice * 20
         cursor.style('top', '%d%%' % top)
 
-    def tap_up(self):
+    def tap_down(self):
         self._choice += 1
-        if self._choice >= len(self.CHOICES) - 1:
+        if self._choice >= len(self.CHOICES):
             self._choice = 0
         self.update_menu()
 
-    def tap_down(self):
+    def tap_up(self):
         self._choice -= 1
         if self._choice < 0:
             self._choice = len(self.CHOICES) - 1
