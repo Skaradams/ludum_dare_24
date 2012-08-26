@@ -15,6 +15,9 @@ class Rat(Actor):
         self._run_multiple = 1
         self._x_vel = 0
 
+        self._right_on = False
+        self._left_on = False
+
         self.listen_key('right')
         self.listen_key('left')
         self.listen_key('space')
@@ -22,20 +25,27 @@ class Rat(Actor):
 
     def update(self):
         super(Rat, self).update()
-        self.set_x_velocity(self._x_vel*self._run_multiple)
+        if self._right_on == self._left_on:
+            self._x_vel = 0
+        elif self._right_on:
+            self._x_vel = self._walk_vel
+        elif self._left_on:
+            self._x_vel = -self._walk_vel
+        self.set_x_velocity(self._x_vel * self._run_multiple)
 
     def on_right_pressed(self):
-        self._x_vel += self._walk_vel
+        self._right_on = True
         self.loop('walk')
 
     def on_right_released(self):
-        self._x_vel -= self._walk_vel
+        self._right_on = False
         self.loop('stance')
+
     def on_left_pressed(self):
-        self._x_vel -= self._walk_vel
+        self._left_on = True
 
     def on_left_released(self):
-        self._x_vel += self._walk_vel
+        self._left_on = False
 
     def on_space_pressed(self):
         if int(self.get_y_velocity()) == 0:
