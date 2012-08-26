@@ -12,7 +12,9 @@ from platforms.hurtingfloor import *
 from platforms.start import Start
 from platforms.flag import Flag
 
+from pill import *
 from rat import Rat
+from evolutions.grasshopper import GrassHopper
 
 class Lab(Level):
     
@@ -22,7 +24,7 @@ class Lab(Level):
             'target': (50, -21),
             'width': 25,
             'rect': Rect((10, 10), (res_width - 20, res_height - 20)),
-            'limits': {'left': 0.0, 'bottom': 10.0,
+            'limits': {'left': 0.0, 'bottom': -30.0,
                        'right': 70.0, 'top': 50.0}
         }, gravity=(0, -33.0))
         self.listen('quit')
@@ -46,7 +48,8 @@ class Lab(Level):
             'platformcage4': PlatformCage4,
             'characterstart': Start,
             'end': Flag,
-            'spades': Spades
+            'spades': Spades,
+            'pillevolutionb': GrassHopperPill
         }        
                 
         # Add background (filled with grey)
@@ -79,12 +82,13 @@ class Lab(Level):
             super(Lab, self).add_chunk(chunk, self.BACKGROUND)
 
     def add_rat(self):
-        rat_datas = self.loader().get_width_from_ratio('sprite.rat.stance_01', self._start.height())
+        rat_datas = self.loader().get_width_from_ratio('rat.stance_01', self._start.height())
 
         self._rat = Rat(position=(self._start.x(), self._start.y()), size=(rat_datas[0], rat_datas[1]), level=self)
         self._rat.set_hitbox({'left': 17.5, 'top': 3.0})
         self.add_chunk(self._rat, self.SPRITES)
         self.world().camera().watch(self._rat, rat_datas[1]/3.5)
+        # self.world().camera().watch(self._rat, -rat_datas[1]*1.5)
 
     @classmethod
     def reset(cls, resolution, navigator):

@@ -1,14 +1,11 @@
-import os
-import sys
-
 from bloodyhell.world.actor import Actor
 from platforms.hurtingfloor import *
 
 class Rat(Actor):
 
-    def __init__(self, position, size, level):
+    def __init__(self, position, size, level, evolution='rat'):
         super(Rat, self).__init__(
-            'sprite.rat', 'stance', position, size
+            evolution, 'stance', position, size
         )
         print self
         self._level = level
@@ -58,14 +55,15 @@ class Rat(Actor):
 
     def on_right_released(self):
         self._right_on = False
-        if self._left_on:
-            self._orientation = "left"
-            if self._running:
-                self._pace = 'run'
-            else:
-                self._pace = 'walk'
-        else:    
-            self._pace = "stance"
+        if self._pace != "jump":
+            if self._left_on:
+                self._orientation = "left"
+                if self._running:
+                    self._pace = 'run'
+                else:
+                    self._pace = 'walk'
+            else:    
+                self._pace = "stance"
         self.animate()    
 
     def on_left_pressed(self):
@@ -88,14 +86,15 @@ class Rat(Actor):
 
     def on_left_released(self):
         self._left_on = False
-        if self._right_on:
-            self._orientation = "right"
-            if self._running:
-                self._pace = 'run'
-            else:
-                self._pace = 'walk'
-        else:    
-            self._pace = "stance"
+        if self._pace != "jump":
+            if self._right_on:
+                self._orientation = "right"
+                if self._running:
+                    self._pace = 'run'
+                else:
+                    self._pace = 'walk'
+            else:    
+                self._pace = "stance"
         self.animate()    
 
     def on_space_pressed(self):
@@ -110,12 +109,16 @@ class Rat(Actor):
     def on_lshift_pressed(self):
         self._run_multiple = 4
         self._running = True
-
+        self._pace = 'run'
         self.animate()
 
     def on_lshift_released(self):
         self._run_multiple = 1
         self._running = False
+        if self._pace != "jump":
+            if self._left_on or self._right_on:
+                self._pace = 'walk'
+
         self.animate()
 
     def on_collision(self, chunk, point):
