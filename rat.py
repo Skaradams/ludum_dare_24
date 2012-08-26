@@ -18,6 +18,7 @@ class Rat(Actor):
         self.listen_key('right')
         self.listen_key('left')
         self.listen_key('space')
+        # self.listen_key('l_shift')
 
     def update(self):
         super(Rat, self).update()
@@ -42,6 +43,10 @@ class Rat(Actor):
 
     def on_space_released(self):
         pass
+
+    # def on_l_shift_pressed(self):
+    #     if self.get_y_velocity() == 0.0:
+    #         self.set_y_velocity(self._jump_vel)
 
     def on_collision(self, chunk, point):
         pass

@@ -91,7 +91,7 @@ class Lab(Level):
     def on_frame(self, delta):
         super(Lab, self).on_frame(delta)
         print self, self._next_level
-        if self._end.contains(self._rat) and self._next_level != None:
+        if self._rat.contains(self._end) and self._next_level != None:
             self._navigator.set_current_view(self._next_level(self._resolution, self._navigator))
 
 class Lab1(Lab):
