@@ -17,14 +17,14 @@ class Rat(Actor):
 
         self._right_on = False
         self._left_on = False
-        
+
         self._orientation = "right"
         self._pace = "stance"
         self._running = False
         self.listen_key('right')
         self.listen_key('left')
         self.listen_key('space')
-        self.listen_key('lshift')   
+        self.listen_key('lshift')
 
     def update(self):
         super(Rat, self).update()
@@ -40,7 +40,7 @@ class Rat(Actor):
         self._right_on = True
         if self._pace != "jump":
             if self._left_on:
-               self._pace = "stance" 
+               self._pace = "stance"
             else:
                 if self._pace == "stance" and self._running:
                     self._pace = "run"
@@ -62,17 +62,17 @@ class Rat(Actor):
                     self._pace = 'run'
                 else:
                     self._pace = 'walk'
-            else:    
+            else:
                 self._pace = "stance"
-        self.animate()    
+        self.animate()
 
     def on_left_pressed(self):
         print self
         self._left_on = True
-        
+
         if self._pace != "jump":
             if self._right_on:
-               self._pace = "stance" 
+               self._pace = "stance"
             else:
                 if self._pace == "stance" and self._running:
                     self._pace = "run"
@@ -94,12 +94,12 @@ class Rat(Actor):
                     self._pace = 'run'
                 else:
                     self._pace = 'walk'
-            else:    
+            else:
                 self._pace = "stance"
-        self.animate()    
+        self.animate()
 
     def on_space_pressed(self):
-        if self.get_y_velocity() == 0.0:
+        if self.get_y_velocity() < 1e-10:
             self._pace = 'jump'
             self.set_y_velocity(self._jump_vel)
             self.animate()

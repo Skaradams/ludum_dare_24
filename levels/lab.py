@@ -116,9 +116,9 @@ class Lab(Level):
             if self._rat.contains(pill):
                 print 'pill contains dude'
                 new_rat = GrassHopper(position=(self._rat.position()[0]+20.0, self._rat.position()[1]+20.0), size=self._rat.position(), level=self)
-                
+
                 # TODO Remove with actor method
-                self.remove_layer(self._rat.layer())
+                self.remove_chunk(self._rat)
                 self._rat = new_rat
 
 class Lab1(Lab):
