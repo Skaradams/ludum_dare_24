@@ -17,7 +17,9 @@ class LoadingTask(threading.Thread):
 
     PACKAGES = {
         'static': '  Cleaning pills  ',
-        'sprite': 'Feeding developers',
+        'rat': '  Rendering beards  ',
+        'tinyrat': '  Generating peaches ',
+        'lumi': '  Feeding developers  ',
         'svg_json': '  Buying plants  ',
         'music': ' Sacrifiing rats '
     }
@@ -29,7 +31,7 @@ class LoadingTask(threading.Thread):
 
     def run(self):
         for package, sentence in self.PACKAGES.items():
-            self._queue.put('     Loading     ')
+            self._queue.put(sentence)
             self._loader.load_package(package)
         self._queue.put(True)
 
