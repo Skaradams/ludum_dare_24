@@ -80,17 +80,27 @@ class Lab(Level):
     def add_rat(self):
         rat_datas = self.loader().get_width_from_ratio('sprite.rat.stance_01', self._start.height())
 
-        self._rat = Rat(position=(self._start.x(), self._start.y()), size=(rat_datas[0], rat_datas[1]))
+        self._rat = Rat(position=(self._start.x(), self._start.y()), size=(rat_datas[0], rat_datas[1]), level=self)
         self._rat.set_hitbox({'left': 17.5})
         self.add_chunk(self._rat, self.SPRITES)
         self.world().camera().watch(self._rat, rat_datas[1]/3.5)
+
+    @classmethod
+    def reset(cls, resolution, navigator):
+        print navigator
+        navigator.set_current_view(cls(resolution, navigator))
+
+    def navigator(self):
+        return self._navigator
+
+    def resolution(self):
+        return self._resolution
 
     def load_music(self):
         self.loader().play_sound('music.im_gonna_change')
 
     def on_frame(self, delta):
         super(Lab, self).on_frame(delta)
-        print self, self._next_level
         if self._rat.contains(self._end) and self._next_level != None:
             self._navigator.set_current_view(self._next_level(self._resolution, self._navigator))
 
