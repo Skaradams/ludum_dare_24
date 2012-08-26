@@ -7,6 +7,8 @@ from bloodyhell.layer.rect import Rect
 from bloodyhell.layer import Layer
 from platforms.groundcage import *
 from platforms.platformcage import *
+from platforms.hurtingfloor import *
+
 from platforms.start import Start
 from platforms.flag import Flag
 
@@ -29,6 +31,7 @@ class Lab(Level):
         self._level = None
         self._start = None
         self._end = None
+        self._hurting_floors = []
         self._next_level = None
         self._resolution = resolution
         self._navigator = navigator
@@ -38,10 +41,11 @@ class Lab(Level):
             'groundcage2': GroundCage2,
             'groundcage3': GroundCage3,
             'groundcage4': GroundCage4,
-            'platformcage1': PlatformCage1,
-            'platformcage2': PlatformCage2,
+            # 'platformcage1': PlatformCage1,
+            # 'platformcage2': PlatformCage2,
             'characterstart': Start,
-            'end': Flag
+            'end': Flag,
+            'spades': Spades
         }        
                 
         # Add background (filled with skyblue)
@@ -55,22 +59,25 @@ class Lab(Level):
 
     def add_chunks(self):
         for rect_id in self._level:
-            datas = self._level[rect_id]
-            try:
-                chunk = self._chunks[rect_id.split('_')[0]](datas)
-
-                if rect_id.split('_')[0] == "characterstart":
-                    self._start = chunk
-
-                if rect_id.split('_')[0] == "end":
-                    self._end = chunk
-
-                self.add_chunk(chunk, self.PLATFORM)
-            except:
-                pass
+            data = self._level[rect_id]
+            self.add_platform(rect_id.split('_')[0], data)
     
+    def add_platform(self, chunk_id, data):
+        if chunk_id in self._chunks:
+            print chunk_id
+            chunk = self._chunks[chunk_id](data)
+            if chunk_id == "characterstart":
+                self._start = chunk
+
+            if chunk_id == "end":
+                self._end = chunk
+
+            if chunk_id == "spades":
+                print "****************spades"
+                self._hurting_floors.append(chunk)
+            super(Lab, self).add_chunk(chunk, self.PLATFORM)
+
     def add_rat(self):
-        print self._start.x
         rat_datas = self.loader().get_width_from_ratio('sprite.rat.stance_01', self._start.height())
 
         self._rat = Rat(position=(self._start.x(), self._start.y()), size=(rat_datas[0], rat_datas[1]))

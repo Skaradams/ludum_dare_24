@@ -11,7 +11,6 @@ class PlatformCage(Fence):
 
 class PlatformCage1(PlatformCage):
     def __init__(self, data):
-        print "PLATFORM 1 : ", data 
         super(PlatformCage1, self).__init__(1, data)
 
 class PlatformCage2(PlatformCage):
