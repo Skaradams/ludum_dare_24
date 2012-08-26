@@ -27,7 +27,7 @@ def run():
     loader.load_package('music')
 
     navigator = game.navigator()
-    navigator.set_current_view(Lab2(RESOLUTION, navigator))
+    navigator.set_current_view(Lab1(RESOLUTION, navigator))
     game.run()
 
 if __name__ == '__main__':

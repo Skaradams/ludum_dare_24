@@ -73,7 +73,6 @@ class Lab(Level):
                 self._end = chunk
 
             if chunk_id == "spades":
-                print "****************spades"
                 self._hurting_floors.append(chunk)
             super(Lab, self).add_chunk(chunk, self.PLATFORM)
 
@@ -91,8 +90,7 @@ class Lab(Level):
     def on_frame(self, delta):
         super(Lab, self).on_frame(delta)
         if self._end.contains(self._rat) and self._next_level != None:
-            pass
-            # self._navigator.set_current_view(self._next_level(self._resolution, self._navigator))
+            self._navigator.set_current_view(self._next_level(self._resolution, self._navigator))
 
 class Lab1(Lab):
     def __init__(self, resolution, navigator):
