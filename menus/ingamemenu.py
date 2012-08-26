@@ -7,8 +7,6 @@ from bloodyhell.view import Layer
 from bloodyhell.widget import Widget
 from bloodyhell.widget.interface import Interface
 
-from levels.lab import Lab1
-
 
 class InGameMenu(View):
 
@@ -16,10 +14,6 @@ class InGameMenu(View):
 
     def __init__(self):
         super(InGameMenu, self).__init__()
-        self.add_layer(
-            Layer(position=(0, 0), size=Widget.get_resolution()).fill('191919'),
-            0
-        )
         self._interface = Interface(
             os.path.join(settings.INTERFACES_DIR, 'ingamemenu.xml')
         )
@@ -76,14 +70,14 @@ class InGameMenu(View):
     def on_quit(self, event):
         sys.exit()
 
-    def play(self):
-        self._navigator.set_current_view(
-            Lab1(Widget.get_resolution(), self._navigator)
-        )
+    def back_to_title_menu(self):
+        from menus.mainmenu import MainMenu
+        self._navigator.set_current_view(MainMenu())
 
     def on_return_pressed(self):
         {
-            'play': self.play,
+            'resume': self._navigator.pop,
+            'back': self.back_to_title_menu,
             'quit': sys.exit
         }[self.CHOICES[self._choice]]()
 

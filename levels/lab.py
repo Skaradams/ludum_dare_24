@@ -12,12 +12,14 @@ from platforms.hurtingfloor import *
 from platforms.start import Start
 from platforms.flag import Flag
 
+from menus.ingamemenu import InGameMenu
+
 from pill import *
 from rat import Rat
 from evolutions.grasshopper import GrassHopper
 
 class Lab(Level):
-    
+
     def __init__(self, resolution, navigator):
         res_width, res_height = resolution
         super(Lab, self).__init__(camera_config={
@@ -50,8 +52,8 @@ class Lab(Level):
             'end': Flag,
             'spades': Spades,
             'pillevolutionb': GrassHopperPill
-        }        
-                
+        }
+
         # Add background (filled with grey)
         self.add_layer(
             Layer(position=(0, 0), size=resolution).fill('191919'),
@@ -59,14 +61,14 @@ class Lab(Level):
         )
 
     def on_quit(self, event):
-        sys.exit()
+        self._navigator.push(InGameMenu())
 
     def add_chunks(self):
         print "ADDING CHUNKS FOR : " + self.__class__.__name__
         for rect_id in self._level:
             data = self._level[rect_id]
             self.add_platform(rect_id.split('_')[0], data)
-    
+
     def add_platform(self, chunk_id, data):
         if chunk_id in self._chunks:
             print chunk_id
