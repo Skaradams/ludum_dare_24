@@ -211,7 +211,8 @@ class Lab(Level):
 class Lab1(Lab):
     def __init__(self, resolution, navigator):
         super(Lab1, self).__init__(resolution, navigator, 'static.comic_strip_2')
-
+        print 'pills', Pill.pill_instances
+        print 'shadows', Shadow.shadow_instances
         self._level = self.loader().get_raw_resource('svg_json.level_1')
         self._next_level = Lab2
         self.add_chunks()
@@ -231,6 +232,8 @@ class Lab1(Lab):
 class Lab2(Lab):
     def __init__(self, resolution, navigator):
         super(Lab2, self).__init__(resolution, navigator, 'static.comic_strip_3')
+        print 'pills', Pill.pill_instances
+        print 'shadows', Shadow.shadow_instances
         self._level = self.loader().get_raw_resource('svg_json.level_2')
         self._next_level = Lab3
         self.add_chunks()
@@ -240,6 +243,8 @@ class Lab2(Lab):
 class Lab3(Lab):
     def __init__(self, resolution, navigator):
         super(Lab3, self).__init__(resolution, navigator, 'static.comic_strip_4')
+        print 'pills', Pill.pill_instances
+        print 'shadows', Shadow.shadow_instances
         self._level = self.loader().get_raw_resource('svg_json.level_3')
         self._next_level = Lab4
         self.add_chunks()
@@ -248,6 +253,8 @@ class Lab3(Lab):
 class Lab4(Lab):
     def __init__(self, resolution, navigator):
         super(Lab4, self).__init__(resolution, navigator, 'static.comic_strip_5')
+        print 'pills', Pill.pill_instances
+        print 'shadows', Shadow.shadow_instances
         self._level = self.loader().get_raw_resource('svg_json.level_4')
         self._next_level = Lab5
         self.add_chunks()

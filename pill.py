@@ -13,17 +13,14 @@ class Pill(Decoration):
         self._height = data['height']
         super(Pill, self).__init__((self._x, self._y), (self._width, self._height), image_id)  
 
-    @classmethod
-    def clear_instances(self):
-        pill_instances = {
+    @staticmethod
+    def clear_instances():
+        Pill.pill_instances = {
             'grasshopper': [],
             'tinyrat': [],
             'lumi': [],
         }
         
-    def __del__(self):
-        print "destroy", self
-
 class GrassHopperPill(Pill):
     def __init__(self, data):
         super(GrassHopperPill, self).__init__(data, 'pill_grasshopper')

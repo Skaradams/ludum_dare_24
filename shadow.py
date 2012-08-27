@@ -10,8 +10,6 @@ class Shadow(Decoration):
         super(Shadow, self).__init__((self._x, self._y), (self._width, self._height), "static.blank")
         Shadow.shadow_instances.append(self)
 
-    def __del__(self):
-        print "destroy", self
-    @classmethod
-    def clear_instances(self):
+    @staticmethod
+    def clear_instances():
         Shadow.shadow_instances = []
