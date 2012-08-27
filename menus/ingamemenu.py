@@ -6,6 +6,9 @@ from bloodyhell.view import View
 from bloodyhell.view import Layer
 from bloodyhell.widget import Widget
 from bloodyhell.widget.interface import Interface
+from bloodyhell.game import Game
+
+from jukebox import JukeBox
 
 
 class InGameMenu(View):
@@ -14,9 +17,7 @@ class InGameMenu(View):
 
     def __init__(self):
         super(InGameMenu, self).__init__()
-        self._interface = Interface(
-            os.path.join(settings.INTERFACES_DIR, 'ingamemenu.xml')
-        )
+        self._interface = Interface('interfaces.ingamemenu')
         self.add_layer(self._interface, 100)
         self._choice = 0
         self._up_tap = False
@@ -68,7 +69,8 @@ class InGameMenu(View):
         self._down_tap = False
 
     def on_quit(self, event):
-        sys.exit()
+        JukeBox().stop()
+        Game.quit()
 
     def back_to_title_menu(self):
         from menus.mainmenu import MainMenu

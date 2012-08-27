@@ -8,6 +8,7 @@ from bloodyhell.widget import Widget
 from bloodyhell.widget.interface import Interface
 
 from levels.lab import *
+from comicstrip import ComicStrip
 from jukebox import JukeBox
 
 class MainMenu(View):
@@ -20,9 +21,7 @@ class MainMenu(View):
             Layer(position=(0, 0), size=Widget.get_resolution()).fill('191919'),
             0
         )
-        self._interface = Interface(
-            os.path.join(settings.INTERFACES_DIR, 'mainmenu.xml')
-        )
+        self._interface = Interface('interfaces.mainmenu')
         JukeBox().play('music.intro')
         self.add_layer(self._interface, 100)
         self._choice = 0
@@ -79,7 +78,7 @@ class MainMenu(View):
 
     def play(self):
         self._navigator.set_current_view(
-            Lab1(Widget.get_resolution(), self._navigator)
+            ComicStrip(Lab1(Widget.get_resolution(), self._navigator))
         )
 
     def on_return_pressed(self):

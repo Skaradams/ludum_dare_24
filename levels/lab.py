@@ -7,12 +7,14 @@ from bloodyhell.layer.rect import Rect
 from bloodyhell.layer import Layer
 from platforms.groundcage import *
 from platforms.platformcage import *
+from platforms.invisiblewall import InvisibleWall
 from platforms.hurtingfloor import *
 
 from platforms.start import Start
 from platforms.flag import Flag
 
 from menus.ingamemenu import InGameMenu
+from comicstrip import ComicStrip
 
 from pill import *
 from rat import Rat
@@ -28,8 +30,8 @@ class Lab(Level):
             'target': (50, -21),
             'width': 30,
             'rect': Rect((10, 10), (res_width - 20, res_height - 20)),
-            'limits': {'left': 0.0, 'bottom': 0.0,
-                       'right': 70.0, 'top': 0.0}
+            'limits': {'left': -1000, 'bottom': -1000,
+                       'right': 1000, 'top': 1000}
         }, gravity=(0, -33.0))
         self.listen('quit')
 
@@ -50,6 +52,7 @@ class Lab(Level):
             'platformcage2': PlatformCage2,
             'platformcage3': PlatformCage3,
             'platformcage4': PlatformCage4,
+            'blank': InvisibleWall,
             'characterstart': Start,
             'end': Flag,
             'spadesdown': SpadesDown,
@@ -114,10 +117,10 @@ class Lab(Level):
     def on_frame(self, delta):
         super(Lab, self).on_frame(delta)
         if self._rat.contains(self._end) and self._next_level != None:
-            self._navigator.set_current_view(self._next_level(self._resolution, self._navigator))
+            # self._navigator.set_current_view(self._next_level(self._resolution, self._navigator))
+            self._navigator.set_current_view(ComicStrip(self._next_level(self._resolution, self._navigator)))
         self.pill_spawn()
 
-        
     def change_rat(self, new_rat):
         self.remove_chunk(self._rat)
         self._rat = new_rat
@@ -139,10 +142,17 @@ class Lab(Level):
         for pill in Pill.pill_instances['lumi']:
             if self._rat.contains(pill) and self._rat.__class__ != Lumi:
                 new_rat = Lumi(position=(self._rat.position()[0], self._rat.position()[1]), level=self, base_height=self._start.height())
-                self.change_rat(new_rat) 
-    
+                self.change_rat(new_rat)
+
     def watch_rat(self):
+        rat_width, rat_height = self._rat.real_size()
+        rat_x, rat_y = self._rat.position()
         self.world().camera().watch(self._rat)
+        if self._rat.__class__ == TinyRat:
+            self.world().camera().set_width(rat_width * 9)
+        else:
+            self.world().camera().set_width(rat_width * 5)
+        self.world().camera().set_y_high_filter_threshold(rat_height * 8)
 
 class Lab1(Lab):
     def __init__(self, resolution, navigator):

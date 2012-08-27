@@ -5,26 +5,26 @@
     <section id="cursor" style="width:20%;height: auto; left: 35%;top: 35%; background-image: rat.stance_01" />
 
     <section style="width:5%;height: auto; left: 0;top: 0; background-image: static.pill_grasshopper" />
-    <section style="width:5%;height: auto; left: 0;top: 10%; background-image: static.pill_tiny" />
+    <section style="width:5%;height: auto; left: 0;top: 10%; background-image: static.pill_tinyrat" />
     <section style="width:5%;height: auto; left: 0;top: 20%; background-image: static.pill_lumi" />
     <section style="width:5%;height: auto; left: 0;top: 30%; background-image: static.pill_grasshopper" />
-    <section style="width:5%;height: auto; left: 0;top: 40%; background-image: static.pill_tiny" />
+    <section style="width:5%;height: auto; left: 0;top: 40%; background-image: static.pill_tinyrat" />
     <section style="width:5%;height: auto; left: 0;top: 50%; background-image: static.pill_lumi" />
     <section style="width:5%;height: auto; left: 0;top: 60%; background-image: static.pill_grasshopper" />
-    <section style="width:5%;height: auto; left: 0;top: 70%; background-image: static.pill_tiny" />
+    <section style="width:5%;height: auto; left: 0;top: 70%; background-image: static.pill_tinyrat" />
     <section style="width:5%;height: auto; left: 0;top: 80%; background-image: static.pill_lumi" />
-    <section style="width:5%;height: auto; left: 0;top: 90%; background-image: static.pill_tiny" />
+    <section style="width:5%;height: auto; left: 0;top: 90%; background-image: static.pill_tinyrat" />
 
     <section style="width:5%;height: auto; right: 0;top: 0; background-image: static.pill_grasshopper" />
-    <section style="width:5%;height: auto; right: 0;top: 10%; background-image: static.pill_tiny" />
+    <section style="width:5%;height: auto; right: 0;top: 10%; background-image: static.pill_tinyrat" />
     <section style="width:5%;height: auto; right: 0;top: 20%; background-image: static.pill_lumi" />
     <section style="width:5%;height: auto; right: 0;top: 30%; background-image: static.pill_grasshopper" />
-    <section style="width:5%;height: auto; right: 0;top: 40%; background-image: static.pill_tiny" />
+    <section style="width:5%;height: auto; right: 0;top: 40%; background-image: static.pill_tinyrat" />
     <section style="width:5%;height: auto; right: 0;top: 50%; background-image: static.pill_lumi" />
     <section style="width:5%;height: auto; right: 0;top: 60%; background-image: static.pill_grasshopper" />
-    <section style="width:5%;height: auto; right: 0;top: 70%; background-image: static.pill_tiny" />
+    <section style="width:5%;height: auto; right: 0;top: 70%; background-image: static.pill_tinyrat" />
     <section style="width:5%;height: auto; right: 0;top: 80%; background-image: static.pill_lumi" />
-    <section style="width:5%;height: auto; right: 0;top: 90%; background-image: static.pill_tiny" />
+    <section style="width:5%;height: auto; right: 0;top: 90%; background-image: static.pill_tinyrat" />
 
 
 </interface>
