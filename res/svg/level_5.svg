@@ -4,11 +4,8 @@
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="16013.86px" height="11914.05px" viewBox="0 0 16013.86 11914.05" enable-background="new 0 0 16013.86 11914.05"
 	 xml:space="preserve">
-<rect id="shadows_4_" x="7659.627" y="1530.174" fill="#686868" width="3341.464" height="1347.277"/>
-<rect id="shadows_6_" x="10776.39" y="3237.996" fill="#686868" width="2730.801" height="1347.277"/>
 <rect id="shadows_5_" x="13876.548" y="155.802" fill="#686868" width="1767.389" height="4983.152"/>
 <rect id="shadows_1_" x="141.341" y="7943.909" fill="#686868" width="3341.465" height="3970.409"/>
-<rect id="shadows_2_" x="4882.773" y="8308.89" fill="#686868" width="2429.341" height="1713.367"/>
 <rect id="groundcage1_27_" x="2647.439" y="11608.901" width="835.366" height="305.416"/>
 <rect id="groundcage3" x="2647.439" y="11303.485" width="835.366" height="305.416"/>
 <rect id="groundcage3_1_" x="2647.439" y="10998.069" width="835.366" height="305.416"/>
@@ -108,7 +105,7 @@
 <rect id="platformcage4_29_" x="10203.524" y="6086.731" fill="#535BA2" width="363.414" height="206.353"/>
 <rect id="platformcage4_46_" x="11657.172" y="6499.438" fill="#535BA2" width="363.415" height="206.352"/>
 <rect id="platformcage4_45_" x="11657.168" y="6705.79" fill="#535BA2" width="363.417" height="206.353"/>
-<rect id="platformcage4_63_" x="11654.754" y="6086.729" fill="#535BA2" width="363.415" height="206.353"/>
+<rect id="platformcage4_63_" x="11654.753" y="6086.729" fill="#535BA2" width="363.416" height="206.353"/>
 <rect id="platformcage4_47_" x="11657.172" y="6912.142" fill="#535BA2" width="363.415" height="206.352"/>
 <rect id="platformcage4_32_" x="10203.524" y="6705.784" fill="#535BA2" width="363.414" height="206.353"/>
 <rect id="platformcage4_31_" x="10203.526" y="6293.081" fill="#535BA2" width="363.414" height="206.352"/>
@@ -132,46 +129,45 @@
 <rect id="spadesdown_29_" x="13837.654" y="7907.921" fill="#C94A96" width="363.41" height="35.982"/>
 <rect id="spadesdown_30_" x="14201.065" y="7907.921" fill="#C94A96" width="363.41" height="35.982"/>
 <rect id="end_2_" x="1606.369" y="11201.696" fill="#FBD849" width="251.266" height="403.363"/>
-<rect id="shadows_3_" x="2647.436" y="5045.444" fill="#686868" width="2506.103" height="2593.044"/>
-<rect id="pillevolutiond_1_" x="3875.146" y="7031.613" fill="#9A549C" width="50.683" height="61.855"/>
+<rect id="pillevolutiond_1_" x="3875.146" y="7031.613" fill="#9A549C" width="50.684" height="61.855"/>
 <rect id="groundcage1_131_" x="5153.534" y="6514.558" width="835.364" height="305.418"/>
 <rect id="groundcage3_114_" x="5153.533" y="4987.476" width="835.364" height="305.418"/>
 <rect id="platformcage2_11_" x="3737.68" y="7181.797" fill="#9BCB56" width="363.412" height="206.352"/>
 <rect id="platformcage2_49_" x="2647.438" y="6356.385" fill="#9BCB56" width="363.416" height="206.355"/>
-<rect id="pillevolutionb_4_" x="3582.04" y="7031.611" fill="#BD5D32" width="50.686" height="61.857"/>
+<rect id="pillevolutionb_4_" x="3582.039" y="7031.611" fill="#BD5D32" width="50.686" height="61.857"/>
 <rect id="platformcage4_50_" x="3374.264" y="7181.793" fill="#535BA2" width="363.415" height="206.354"/>
 <rect id="platformcage4_27_" x="3010.85" y="6975.441" fill="#535BA2" width="363.414" height="206.352"/>
-<rect id="platformcage4_2_" x="4790.127" y="6253.562" fill="#535BA2" width="363.414" height="206.352"/>
+<rect id="platformcage4_2_" x="4790.127" y="6253.562" fill="#535BA2" width="363.413" height="206.352"/>
 <rect id="platformcage4_53_" x="2647.436" y="6975.441" fill="#535BA2" width="363.414" height="206.352"/>
 <rect id="platformcage3_31_" x="2647.44" y="6562.74" fill="#DD192C" width="363.412" height="206.354"/>
 <rect id="platformcage3_34_" x="4790.127" y="6046.855" fill="#DD192C" width="363.413" height="206.354"/>
 <rect id="platformcage3_32_" x="2647.44" y="7181.797" fill="#DD192C" width="363.412" height="206.354"/>
 <rect id="platformcage3_33_" x="3010.848" y="7181.797" fill="#DD192C" width="363.412" height="206.354"/>
 <rect id="platformcage2_2_" x="4790.127" y="6459.566" fill="#9BCB56" width="363.413" height="206.352"/>
-<rect id="platformcage4_1_" x="4426.71" y="6459.562" fill="#535BA2" width="363.416" height="206.354"/>
-<rect id="platformcage3_21_" x="4063.295" y="6459.566" fill="#DD192C" width="363.413" height="206.354"/>
+<rect id="platformcage4_1_" x="4426.71" y="6459.562" fill="#535BA2" width="363.417" height="206.354"/>
+<rect id="platformcage3_21_" x="4063.294" y="6459.566" fill="#DD192C" width="363.413" height="206.354"/>
 <rect id="platformcage4_51_" x="2647.438" y="6769.09" fill="#535BA2" width="363.414" height="206.352"/>
 <rect id="platformcage1_5_" x="4426.709" y="6253.209" fill="#70BF58" width="363.418" height="206.354"/>
 <rect id="spadesdown_24_" x="3374.263" y="7602.506" fill="#C94A96" width="363.412" height="35.982"/>
 <rect id="spadesdown_23_" x="3737.677" y="7602.504" fill="#C94A96" width="363.411" height="35.984"/>
-<rect id="spadesdown_28_" x="2647.438" y="7602.506" fill="#C94A96" width="363.411" height="35.982"/>
+<rect id="spadesdown_28_" x="2647.438" y="7602.506" fill="#C94A96" width="363.412" height="35.982"/>
 <rect id="spadesdown_27_" x="3010.852" y="7602.504" fill="#C94A96" width="363.411" height="35.984"/>
 <rect id="spadesleft_1_" x="2647.44" y="6114.4" fill="#C94A96" width="35.59" height="206.354"/>
 <rect id="spadesleft_2_" x="2647.44" y="5908.048" fill="#C94A96" width="35.59" height="206.353"/>
 <rect id="spadesleft_4_" x="2647.44" y="5705.6" fill="#C94A96" width="35.59" height="206.354"/>
 <rect id="spadesleft_3_" x="2647.44" y="5499.246" fill="#C94A96" width="35.59" height="206.354"/>
 <rect id="spadesleft_5_" x="2647.44" y="5292.893" fill="#C94A96" width="35.59" height="206.354"/>
-<rect id="spadesleft_8_" x="3846.213" y="5573.024" fill="#C94A96" width="35.59" height="206.354"/>
-<rect id="spadesleft_7_" x="3846.213" y="5366.671" fill="#C94A96" width="35.59" height="206.354"/>
-<rect id="spadesleft_6_" x="3846.213" y="5160.317" fill="#C94A96" width="35.59" height="206.354"/>
-<rect id="spadesdown_10_" x="3846.213" y="5779.378" fill="#C94A96" width="363.414" height="35.983"/>
+<rect id="spadesleft_8_" x="3846.214" y="5573.024" fill="#C94A96" width="35.59" height="206.354"/>
+<rect id="spadesleft_7_" x="3846.214" y="5366.671" fill="#C94A96" width="35.59" height="206.354"/>
+<rect id="spadesleft_6_" x="3846.214" y="5160.317" fill="#C94A96" width="35.59" height="206.354"/>
+<rect id="spadesdown_10_" x="3846.214" y="5779.378" fill="#C94A96" width="363.413" height="35.983"/>
 <rect id="pillevolutiond_2_" x="4583.077" y="6083.473" fill="#9A549C" width="50.684" height="61.855"/>
 <rect id="pillevolutionb_5_" x="4946.491" y="5926.444" fill="#BD5D32" width="50.686" height="61.856"/>
-<rect id="platformcage4_3_" x="3482.799" y="5198.153" fill="#535BA2" width="363.414" height="206.352"/>
+<rect id="platformcage4_3_" x="3482.799" y="5198.153" fill="#535BA2" width="363.415" height="206.352"/>
 <rect id="platformcage4_4_" x="3482.799" y="5404.505" fill="#535BA2" width="363.414" height="206.352"/>
-<rect id="platformcage4_5_" x="3482.799" y="5610.856" fill="#535BA2" width="363.414" height="206.352"/>
-<rect id="platformcage4_8_" x="3482.799" y="5815.361" fill="#535BA2" width="363.414" height="206.352"/>
-<rect id="platformcage4_9_" x="3846.213" y="5815.361" fill="#535BA2" width="363.415" height="206.352"/>
+<rect id="platformcage4_5_" x="3482.799" y="5610.856" fill="#535BA2" width="363.415" height="206.352"/>
+<rect id="platformcage4_8_" x="3482.799" y="5815.361" fill="#535BA2" width="363.415" height="206.352"/>
+<rect id="platformcage4_9_" x="3846.214" y="5815.361" fill="#535BA2" width="363.414" height="206.352"/>
 <rect id="groundcage1_126_" x="11836.461" y="4584.333" width="835.364" height="305.416"/>
 <rect id="groundcage4_4_" x="9330.359" y="4584.333" width="835.366" height="305.416"/>
 <rect id="groundcage1_124_" x="8494.994" y="4584.333" width="835.364" height="305.416"/>
@@ -191,14 +187,14 @@
 <rect id="platformcage4_43_" x="10412.975" y="2054.471" fill="#535BA2" width="363.414" height="206.352"/>
 <rect id="platformcage4_42_" x="9577.607" y="1641.768" fill="#535BA2" width="363.413" height="206.352"/>
 <rect id="platformcage4_41_" x="11248.342" y="4117.987" fill="#535BA2" width="363.413" height="206.352"/>
-<rect id="platformcage4_40_" x="12083.71" y="3705.283" fill="#535BA2" width="363.416" height="206.352"/>
+<rect id="platformcage4_40_" x="12083.71" y="3705.283" fill="#535BA2" width="363.418" height="206.352"/>
 <rect id="platformcage4_39_" x="11248.342" y="3292.58" fill="#535BA2" width="363.413" height="206.352"/>
-<rect id="platformcage4_38_" x="12083.71" y="2879.877" fill="#535BA2" width="363.416" height="206.351"/>
+<rect id="platformcage4_38_" x="12083.71" y="2879.877" fill="#535BA2" width="363.418" height="206.351"/>
 <rect id="platformcage4_37_" x="11248.342" y="2467.174" fill="#535BA2" width="363.413" height="206.352"/>
 <rect id="platformcage4_36_" x="12919.074" y="4117.987" fill="#535BA2" width="363.414" height="206.352"/>
 <rect id="platformcage4_19_" x="12919.074" y="3292.58" fill="#535BA2" width="363.414" height="206.352"/>
 <rect id="platformcage4_18_" x="12919.074" y="2467.174" fill="#535BA2" width="363.414" height="206.352"/>
-<rect id="platformcage4_17_" x="12083.709" y="2054.471" fill="#535BA2" width="363.417" height="206.352"/>
+<rect id="platformcage4_17_" x="12083.71" y="2054.471" fill="#535BA2" width="363.418" height="206.352"/>
 <rect id="platformcage4_15_" x="11248.342" y="1641.768" fill="#535BA2" width="363.413" height="206.352"/>
 <rect id="platformcage4_14_" x="11248.344" y="1641.768" fill="#535BA2" width="363.413" height="206.352"/>
 <rect id="platformcage4_12_" x="12083.713" y="1229.064" fill="#535BA2" width="363.415" height="206.352"/>
@@ -271,9 +267,6 @@
 <rect id="platformcage3_36_" x="11475.465" y="5096.102" fill="#DD192C" width="363.414" height="206.352"/>
 <rect id="platformcage3_35_" x="11838.881" y="5096.102" fill="#DD192C" width="363.413" height="206.352"/>
 <rect id="platformcage3_37_" x="11838.881" y="4889.749" fill="#DD192C" width="363.413" height="206.352"/>
-<rect id="pillevolutiond_5_" x="11379.365" y="3973.5" fill="#9A549C" width="50.684" height="61.856"/>
-<rect id="pillevolutionb_6_" x="9722.7" y="2328.949" fill="#BD5D32" width="50.686" height="61.857"/>
-<rect id="pillevolutiond_6_" x="10569.342" y="1926.442" fill="#9A549C" width="50.684" height="61.855"/>
 <rect id="pillevolutiona_1_" x="8051.965" y="1913.729" fill="#4877B5" width="50.686" height="61.854"/>
 <rect id="groundcage1_275_" x="1717.468" y="2141.167" width="835.366" height="305.416"/>
 <rect id="groundcage3_112_" x="882.102" y="1988.46" width="835.367" height="305.417"/>
@@ -304,37 +297,35 @@
 <rect id="groundcage1_129_" x="5153.526" y="3515.542" width="835.367" height="305.416"/>
 <rect id="groundcage3_108_" x="6036.189" y="3668.251" width="835.367" height="305.415"/>
 <rect id="spadesdown_34_" x="5920.172" y="3784.975" fill="#C94A96" width="363.414" height="35.983"/>
-<rect id="pillevolutionb_1_" x="10594.683" y="4400.696" fill="#BD5D32" width="50.686" height="61.857"/>
 <rect id="pillevolutionb_7_" x="10541.596" y="5240.596" fill="#BD5D32" width="50.686" height="61.857"/>
-<rect id="shadows_7_" x="8749.873" y="5701.488" fill="#686868" width="2487.6" height="1989.326"/>
 <rect id="groundcage3_19_" x="2647.439" y="9165.573" width="835.366" height="305.416"/>
 <rect id="groundcage3_18_" x="2647.439" y="8860.157" width="835.366" height="305.416"/>
 <rect id="groundcage3_17_" x="2647.439" y="8554.741" width="835.366" height="305.416"/>
 <rect id="groundcage3_16_" x="2647.439" y="8249.325" width="835.366" height="305.416"/>
-<rect id="groundcage3_23_" x="4318.173" y="10387.237" width="835.366" height="305.416"/>
-<rect id="groundcage3_22_" x="4318.173" y="10081.821" width="835.366" height="305.416"/>
-<rect id="groundcage3_21_" x="4318.173" y="9776.405" width="835.366" height="305.416"/>
-<rect id="groundcage3_20_" x="4318.173" y="9470.989" width="835.366" height="305.416"/>
-<rect id="groundcage3_27_" x="4318.173" y="9165.573" width="835.366" height="305.416"/>
-<rect id="groundcage3_26_" x="4318.173" y="8860.157" width="835.366" height="305.416"/>
-<rect id="groundcage3_25_" x="4318.173" y="8554.741" width="835.366" height="305.416"/>
-<rect id="groundcage3_24_" x="4318.173" y="8249.325" width="835.366" height="305.416"/>
-<rect id="groundcage3_31_" x="6824.271" y="11303.485" width="835.366" height="305.416"/>
-<rect id="groundcage3_30_" x="6824.271" y="10998.069" width="835.366" height="305.416"/>
-<rect id="groundcage3_29_" x="6824.271" y="10692.653" width="835.366" height="305.416"/>
-<rect id="groundcage3_28_" x="6824.271" y="10387.237" width="835.366" height="305.416"/>
-<rect id="groundcage3_35_" x="6824.271" y="10081.821" width="835.366" height="305.416"/>
-<rect id="groundcage3_34_" x="6824.271" y="9776.405" width="835.366" height="305.416"/>
-<rect id="groundcage3_33_" x="6824.271" y="9470.989" width="835.366" height="305.416"/>
-<rect id="groundcage3_32_" x="6824.271" y="9165.573" width="835.366" height="305.416"/>
-<rect id="groundcage3_38_" x="6824.271" y="8860.157" width="835.366" height="305.416"/>
-<rect id="groundcage3_37_" x="6824.271" y="8554.741" width="835.366" height="305.416"/>
-<rect id="groundcage3_36_" x="6824.271" y="8249.325" width="835.366" height="305.416"/>
-<rect id="groundcage1_7_" x="3482.807" y="7638.488" width="835.364" height="305.416"/>
-<rect id="groundcage1_8_" x="4318.174" y="7638.488" width="835.364" height="305.416"/>
-<rect id="groundcage1_10_" x="1812.074" y="7638.488" width="835.364" height="305.416"/>
-<rect id="groundcage1_9_" x="2647.441" y="7638.488" width="835.364" height="305.416"/>
-<rect id="characterstart_4_" x="3718.423" y="11201.695" fill="#7CD2E2" width="85.193" height="403.363"/>
+<rect id="groundcage3_23_" x="4318.173" y="10387.237" width="835.367" height="305.416"/>
+<rect id="groundcage3_22_" x="4318.173" y="10081.821" width="835.367" height="305.416"/>
+<rect id="groundcage3_21_" x="4318.173" y="9776.405" width="835.367" height="305.416"/>
+<rect id="groundcage3_20_" x="4318.173" y="9470.989" width="835.367" height="305.416"/>
+<rect id="groundcage3_27_" x="4318.173" y="9165.573" width="835.367" height="305.416"/>
+<rect id="groundcage3_26_" x="4318.173" y="8860.157" width="835.367" height="305.416"/>
+<rect id="groundcage3_25_" x="4318.173" y="8554.741" width="835.367" height="305.416"/>
+<rect id="groundcage3_24_" x="4318.173" y="8249.325" width="835.367" height="305.416"/>
+<rect id="groundcage3_31_" x="6824.271" y="11303.485" width="835.365" height="305.416"/>
+<rect id="groundcage3_30_" x="6824.271" y="10998.069" width="835.365" height="305.416"/>
+<rect id="groundcage3_29_" x="6824.271" y="10692.653" width="835.365" height="305.416"/>
+<rect id="groundcage3_28_" x="6824.271" y="10387.237" width="835.365" height="305.416"/>
+<rect id="groundcage3_35_" x="6824.271" y="10081.821" width="835.365" height="305.416"/>
+<rect id="groundcage3_34_" x="6824.271" y="9776.405" width="835.365" height="305.416"/>
+<rect id="groundcage3_33_" x="6824.271" y="9470.989" width="835.365" height="305.416"/>
+<rect id="groundcage3_32_" x="6824.271" y="9165.573" width="835.365" height="305.416"/>
+<rect id="groundcage3_38_" x="6824.271" y="8860.157" width="835.365" height="305.416"/>
+<rect id="groundcage3_37_" x="6824.271" y="8554.741" width="835.365" height="305.416"/>
+<rect id="groundcage3_36_" x="6824.271" y="8249.325" width="835.365" height="305.416"/>
+<rect id="groundcage1_7_" x="3482.807" y="7638.488" width="835.365" height="305.416"/>
+<rect id="groundcage1_8_" x="4318.173" y="7638.488" width="835.365" height="305.416"/>
+<rect id="groundcage1_10_" x="1812.073" y="7638.488" width="835.365" height="305.416"/>
+<rect id="groundcage1_9_" x="2647.441" y="7638.488" width="835.365" height="305.416"/>
+<rect id="characterstart_4_" x="3718.422" y="11201.695" fill="#7CD2E2" width="85.194" height="403.363"/>
 <rect id="groundcage3_48_" x="1812.073" y="7336.064" width="835.366" height="305.416"/>
 <rect id="groundcage3_47_" x="1812.073" y="7030.648" width="835.366" height="305.416"/>
 <rect id="groundcage3_46_" x="1812.073" y="6725.232" width="835.366" height="305.416"/>
@@ -343,10 +334,10 @@
 <rect id="groundcage3_43_" x="1812.073" y="5808.984" width="835.366" height="305.416"/>
 <rect id="groundcage3_42_" x="1812.073" y="5503.568" width="835.366" height="305.416"/>
 <rect id="groundcage3_41_" x="1812.073" y="5198.152" width="835.366" height="305.416"/>
-<rect id="groundcage3_51_" x="5153.532" y="6209.142" width="835.366" height="305.416"/>
-<rect id="groundcage3_50_" x="5153.532" y="5903.726" width="835.366" height="305.416"/>
-<rect id="groundcage3_49_" x="5153.532" y="5598.31" width="835.366" height="305.416"/>
-<rect id="groundcage3_39_" x="5153.532" y="5292.894" width="835.366" height="305.416"/>
+<rect id="groundcage3_51_" x="5153.531" y="6209.142" width="835.367" height="305.416"/>
+<rect id="groundcage3_50_" x="5153.531" y="5903.726" width="835.367" height="305.416"/>
+<rect id="groundcage3_49_" x="5153.531" y="5598.31" width="835.367" height="305.416"/>
+<rect id="groundcage3_39_" x="5153.531" y="5292.894" width="835.367" height="305.416"/>
 <rect id="groundcage3_57_" x="14342.564" y="7638.493" width="835.366" height="305.416"/>
 <rect id="groundcage3_56_" x="14342.564" y="7333.077" width="835.366" height="305.416"/>
 <rect id="groundcage3_55_" x="14342.564" y="7027.661" width="835.366" height="305.416"/>
@@ -389,32 +380,32 @@
 <rect id="groundcage3_96_" x="7659.626" y="4279.079" width="835.366" height="305.416"/>
 <rect id="groundcage3_94_" x="7659.626" y="3668.247" width="835.366" height="305.416"/>
 <rect id="groundcage3_93_" x="7659.626" y="3362.831" width="835.366" height="305.416"/>
-<rect id="groundcage3_97_" x="4318.16" y="2751.999" width="835.366" height="305.416"/>
-<rect id="groundcage3_98_" x="3435.498" y="2751.999" width="835.366" height="305.416"/>
+<rect id="groundcage3_97_" x="4318.159" y="2751.999" width="835.367" height="305.416"/>
+<rect id="groundcage3_98_" x="3435.497" y="2751.999" width="835.367" height="305.416"/>
 <rect id="groundcage3_100_" x="-0.564" y="3667.92" width="835.366" height="305.416"/>
 <rect id="groundcage3_101_" x="-0.564" y="3973.332" width="835.366" height="305.416"/>
 <rect id="groundcage3_102_" x="882.1" y="3820.628" width="835.366" height="305.416"/>
 <rect id="groundcage3_103_" x="1717.467" y="3820.628" width="835.366" height="305.416"/>
 <rect id="groundcage3_104_" x="2600.13" y="3820.344" width="835.366" height="305.416"/>
 <rect id="groundcage3_105_" x="3435.498" y="3820.344" width="835.366" height="305.416"/>
-<rect id="groundcage3_106_" x="4318.16" y="3820.344" width="835.366" height="305.416"/>
+<rect id="groundcage3_106_" x="4318.159" y="3820.344" width="835.367" height="305.416"/>
 <rect id="groundcage4" x="5200.823" y="3820.958" width="835.366" height="305.416"/>
 <rect id="groundcage3_107_" x="6036.19" y="3362.834" width="835.366" height="305.416"/>
 <rect id="groundcage2_1_" x="2647.441" y="7943.909" width="835.365" height="305.416"/>
-<rect id="groundcage2_3_" x="1812.074" y="7943.909" width="835.365" height="305.416"/>
-<rect id="groundcage2_2_" x="976.708" y="7943.909" width="835.365" height="305.416"/>
+<rect id="groundcage2_3_" x="1812.073" y="7943.909" width="835.365" height="305.416"/>
+<rect id="groundcage2_2_" x="976.708" y="7943.909" width="835.364" height="305.416"/>
 <rect id="groundcage2_4_" x="141.342" y="7943.909" width="835.365" height="305.416"/>
-<rect id="groundcage2_5_" x="1812.074" y="4892.736" width="835.365" height="305.416"/>
-<rect id="groundcage2_6_" x="2647.44" y="4892.736" width="835.365" height="305.416"/>
+<rect id="groundcage2_5_" x="1812.074" y="4892.736" width="835.364" height="305.416"/>
+<rect id="groundcage2_6_" x="2647.44" y="4892.736" width="835.364" height="305.416"/>
 <rect id="groundcage2_7_" x="3482.805" y="4892.736" width="835.365" height="305.416"/>
 <rect id="groundcage2_8_" x="4318.17" y="4892.736" width="835.365" height="305.416"/>
-<rect id="groundcage2_9_" x="5153.533" y="4682.06" width="835.364" height="305.416"/>
+<rect id="groundcage2_9_" x="5153.532" y="4682.06" width="835.365" height="305.416"/>
 <rect id="groundcage2_10_" x="6824.262" y="4584.333" width="835.364" height="305.416"/>
 <rect id="groundcage2_11_" x="5988.896" y="4584.333" width="835.364" height="305.416"/>
-<rect id="groundcage2_13_" x="6824.262" y="1682.881" width="835.364" height="305.416"/>
-<rect id="groundcage2_14_" x="5988.897" y="1682.882" width="835.364" height="305.415"/>
-<rect id="groundcage2_16_" x="5153.532" y="1682.882" width="835.364" height="305.416"/>
-<rect id="groundcage2_15_" x="4318.167" y="1682.882" width="835.364" height="305.415"/>
+<rect id="groundcage2_13_" x="6824.261" y="1682.881" width="835.365" height="305.416"/>
+<rect id="groundcage2_14_" x="5988.897" y="1682.882" width="835.363" height="305.415"/>
+<rect id="groundcage2_16_" x="5153.531" y="1682.882" width="835.365" height="305.416"/>
+<rect id="groundcage2_15_" x="4318.168" y="1682.882" width="835.364" height="305.415"/>
 <rect id="groundcage2_20_" x="3482.803" y="1682.882" width="835.364" height="305.416"/>
 <rect id="groundcage2_19_" x="2647.438" y="1682.882" width="835.364" height="305.415"/>
 <rect id="groundcage2_18_" x="1812.073" y="1682.882" width="835.364" height="305.416"/>
@@ -437,4 +428,21 @@
 <rect id="groundcage2_35_" x="11836.451" y="3.093" width="835.363" height="305.415"/>
 <rect id="groundcage2_39_" x="15177.91" y="3.094" width="835.364" height="305.416"/>
 <rect id="groundcage2_38_" x="14342.545" y="3.094" width="835.363" height="305.415"/>
+<rect id="backlayer2_1_" x="11601.65" y="10058.369" fill="#FDC245" width="583.004" height="411.25"/>
+<rect id="backlayer2_4_" x="8203.491" y="4889.749" fill="#FDC245" width="583.004" height="411.25"/>
+<rect id="backlayer3" x="10766.283" y="10677.428" fill="#F8A0C3" width="583.003" height="411.25"/>
+<rect id="backlayer4_1_" x="11601.65" y="10677.428" fill="#FEE85D" width="583.003" height="411.25"/>
+<rect id="backlayer1_323_" x="10766.283" y="10058.369" fill="#48C4C4" width="583.003" height="411.25"/>
+<rect id="backlayer4_2_" x="2064.433" y="10081.821" fill="#FEE85D" width="583.003" height="411.25"/>
+<rect id="backlayer1_1_" x="5043.744" y="11097.86" fill="#48C4C4" width="583.003" height="411.25"/>
+<rect id="backlayer1_2_" x="1440.501" y="10639.736" fill="#48C4C4" width="583.003" height="411.25"/>
+<rect id="backlayer4_3_" x="6241.269" y="8959.949" fill="#FEE85D" width="583.003" height="411.25"/>
+<rect id="backlayer3_1_" x="5949.768" y="7079.345" fill="#F8A0C3" width="583.003" height="411.25"/>
+<rect id="backlayer3_2_" x="8632.447" y="1477.256" fill="#F8A0C3" width="583.003" height="411.25"/>
+<rect id="backlayer2_2_" x="3554.712" y="6011.952" fill="#FDC245" width="583.004" height="411.25"/>
+<rect id="backlayer2_3_" x="14530.501" y="326.405" fill="#FDC245" width="583.004" height="411.25"/>
+<rect id="backlayer1_3_" x="12054.697" y="532.03" fill="#48C4C4" width="583.003" height="411.25"/>
+<rect id="backlayer1_4_" x="8276.666" y="6115.129" fill="#48C4C4" width="583.003" height="411.25"/>
+<rect id="backlayer4_4_" x="13759.553" y="5499.975" fill="#FEE85D" width="583.003" height="411.25"/>
+<rect id="backlayer4_5_" x="4570.528" y="5293.622" fill="#FEE85D" width="583.003" height="411.25"/>
 </svg>
