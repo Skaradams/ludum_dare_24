@@ -1,4 +1,4 @@
 <interface>
-    <label id="message" text="     Loading     " style="width:100%;height: 50%; left: 40%;top: 60%; font-size: 40; color: #fbbf80" />
+    <label id="message" text="     Loading     " style="width:100%;height: 50%; left: 20%;top: 50%; font-size: 40; color: #fbbf80" />
 
 </interface>

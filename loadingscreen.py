@@ -40,7 +40,7 @@ class LoadingScreen(View):
             Layer(position=(0, 0), size=resolution).fill('191919'), 0
         )
         self._animation = AnimatedLayer(
-            position=(res_width / 2 - 100, res_height / 2), size=(275, 50)
+            position=(res_width / 2 - 120, res_height / 2.3), size=(275, 50)
         )
         self._animation.set_animation('loading.tinyrat.walk')
         self.add_layer(self._animation, 1)
