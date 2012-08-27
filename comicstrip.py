@@ -54,8 +54,7 @@ class ComicStrip(View):
 
     def on_return_pressed(self):
         print self._res_height - int(self._interface.get('comicstrip').style('top')), self._height
-        if self._res_height - int(self._interface.get('comicstrip').style('top')) > self._height:
-            self._navigator.set_current_view(self._level)
+        self._navigator.set_current_view(self._level)
 
     def on_return_released(self):
         pass

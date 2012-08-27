@@ -20,6 +20,9 @@ class Pill(Decoration):
             'tinyrat': [],
             'lumi': [],
         }
+        
+    def __del__(self):
+        print "destroy", self
 
 class GrassHopperPill(Pill):
     def __init__(self, data):

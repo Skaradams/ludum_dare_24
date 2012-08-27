@@ -21,12 +21,7 @@ class Rat(Actor):
         self._run_multiple = 1
         self._x_vel = 0
 
-        self._right_on = False
-        self._left_on = False
-
-        self._orientation = "right"
-        self._pace = "stance"
-        self._running = False
+        self.reset()
         self.listen_key('right')
         self.listen_key('left')
         self.listen_key('space')
@@ -148,3 +143,11 @@ class Rat(Actor):
             self.loop(self._pace+"_left")
         else:
             self.loop(self._pace)
+
+    def reset(self):
+        self._right_on = False
+        self._left_on = False
+        self._orientation = "right"
+        self._pace = "stance"
+        self._running = False
+        self.animate()
