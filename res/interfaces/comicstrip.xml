@@ -1,5 +1,4 @@
 <interface>
     <section style="width:100%; height:auto; left:0; top:0" id="comicstrip" />
-    <label id="scroll" text="'Arrows' to scroll" style="width:100%;height: 50%; left: 300;top: 95%; font-size: 40; color: #000000" />
-    <label id="skip" text="'Return' to skip" style="width:100%;height: 50%; left: 550;top: 95%; font-size: 40; color: #000000" />
+    <label id="scroll" text="'Arrows' to scroll / 'Return' to skip" style="width:100%;height: 50%; left: 10%;top: 90%; font-size: 30; color: #000000" />
 </interface>    
