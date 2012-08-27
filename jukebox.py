@@ -15,7 +15,7 @@ class JukeBox(object):
     def initialize(self):
         self._current_track = None
         self._current_track_name = None
-        self._loop_timer = None
+        self._timer = None
 
     def reload(self):
         if self._current_track is not None:
