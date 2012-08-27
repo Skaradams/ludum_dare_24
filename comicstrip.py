@@ -7,7 +7,7 @@ from bloodyhell.view import Layer
 from bloodyhell.widget.interface import Interface
 from bloodyhell.widget import Widget
 
-class ComicStrip(View):
+class ComicStrip(View, image_id):
     def __init__(self, level):
         super(ComicStrip, self).__init__()
 
@@ -26,7 +26,7 @@ class ComicStrip(View):
         self._height = self.loader().get_raw_resource('static.comic_strip_1').get_height()
         self._increment = 100
 
-        self._interface.get('comicstrip').style('background-image', 'static.comic_strip_1')
+        self._interface.get('comicstrip').style('background-image', image_id)
         self.add_layer(self._interface, 100)
 
         self.listen_key('return')

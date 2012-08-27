@@ -80,7 +80,7 @@ class MainMenu(View):
 
     def play(self):
         self._navigator.set_current_view(
-            ComicStrip(Lab1(Widget.get_resolution(), self._navigator))
+            ComicStrip(Lab1(Widget.get_resolution(), self._navigator), 'static.comic_strip_1')
         )
 
     def on_return_pressed(self):

@@ -11,7 +11,15 @@ class Pill(Decoration):
         self._y = data['y']
         self._width = data['width']
         self._height = data['height']
-        super(Pill, self).__init__((self._x, self._y), (self._width, self._height), image_id)   
+        super(Pill, self).__init__((self._x, self._y), (self._width, self._height), image_id)  
+
+    @classmethod
+    def clear_instances(self):
+        pill_instances = {
+            'grasshopper': [],
+            'tinyrat': [],
+            'lumi': [],
+        }
 
 class GrassHopperPill(Pill):
     def __init__(self, data):

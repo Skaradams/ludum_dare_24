@@ -8,7 +8,6 @@ class Rat(Actor):
     def __init__(self, position, level, evolution='rat', size=None, base_height=None, track='music.im_gonna_change'):
        
         if size == None:
-
             size = ResourceLoader().get_width_from_ratio('rat.stance_01', base_height)
 
         super(Rat, self).__init__(
