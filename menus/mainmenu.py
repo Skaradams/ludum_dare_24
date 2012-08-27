@@ -20,9 +20,7 @@ class MainMenu(View):
             Layer(position=(0, 0), size=Widget.get_resolution()).fill('191919'),
             0
         )
-        self._interface = Interface(
-            os.path.join(settings.INTERFACES_DIR, 'mainmenu.xml')
-        )
+        self._interface = Interface('interfaces.mainmenu')
         JukeBox().play('music.intro')
         self.add_layer(self._interface, 100)
         self._choice = 0

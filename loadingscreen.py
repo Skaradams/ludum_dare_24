@@ -12,17 +12,8 @@ from bloodyhell.layer.animatedlayer import AnimatedLayer
 
 from menus.mainmenu import MainMenu
 
-class LoadingTask(threading.Thread):
 
-    PACKAGES = {
-        'static': '  Cleaning pills  ',
-        'rat': '  Rendering beards  ',
-        'tinyrat': '  Generating peaches ',
-        'lumi': '  Feeding developers  ',
-        'grasshopper': '  Stealing your coins  ',
-        'svg_json': '  Buying plants  ',
-        'music': ' Sacrificing rats '
-    }
+class LoadingTask(threading.Thread):
 
     def __init__(self, loader, queue):
         threading.Thread.__init__(self)
@@ -30,7 +21,7 @@ class LoadingTask(threading.Thread):
         self._queue = queue
 
     def run(self):
-        for package, sentence in self.PACKAGES.items():
+        for package, sentence in settings.PACKAGES.items():
             self._queue.put(sentence)
             self._loader.load_package(package)
         self._queue.put(True)
@@ -41,6 +32,7 @@ class LoadingScreen(View):
     def __init__(self):
         super(LoadingScreen, self).__init__()
         self.loader().load_package('loading')
+        self.loader().load_package('interfaces')
         resolution = Widget.get_resolution()
         res_width, res_height = resolution
         self.add_layer(
@@ -52,9 +44,7 @@ class LoadingScreen(View):
         self._animation.set_animation('loading.tinyrat.walk')
         self.add_layer(self._animation, 1)
         self.listen('quit')
-        self._interface = Interface(
-            os.path.join(settings.INTERFACES_DIR, 'loadingscreen.xml')
-        )
+        self._interface = Interface('interfaces.loadingscreen')
         self.add_layer(self._interface, 100)
         self._queue = Queue.Queue()
         self._loading_task = LoadingTask(self.loader(), self._queue)
