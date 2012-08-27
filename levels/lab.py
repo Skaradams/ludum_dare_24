@@ -13,6 +13,7 @@ from platforms.hurtingfloor import *
 from platforms.start import Start
 from platforms.flag import Flag
 
+from backlayers import *
 from menus.ingamemenu import InGameMenu
 from comicstrip import ComicStrip
 
@@ -52,6 +53,7 @@ class Lab(Level):
             'platformcage2': PlatformCage2,
             'platformcage3': PlatformCage3,
             'platformcage4': PlatformCage4,
+            'backlayer1': BackLayer1,
             'blank': InvisibleWall,
             'characterstart': Start,
             'end': Flag,
@@ -91,7 +93,12 @@ class Lab(Level):
             if chunk_id == "spades":
                 self._hurting_floors.append(chunk)
 
-            super(Lab, self).add_chunk(chunk, self.BACKGROUND)
+            if isinstance(chunk, BackLayer):
+                layer_pos = self.BACKGROUND
+                
+            else:
+                layer_pos = self.BACKGROUND_1
+            super(Lab, self).add_chunk(chunk, layer_pos)
 
     def add_rat(self):
         self._rat = Rat(position=(self._start.x(), self._start.y()), level=self, base_height=self._start.height())
