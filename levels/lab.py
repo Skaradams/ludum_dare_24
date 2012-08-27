@@ -90,7 +90,7 @@ class Lab(Level):
         self._rat = Rat(position=(self._start.x(), self._start.y()), size=(rat_datas[0], rat_datas[1]), level=self)
         # self._rat.set_hitbox({'left': 17.5, 'top': 3.0})
         self.add_chunk(self._rat, self.SPRITES)
-        self.world().camera().watch(self._rat, rat_datas[1]/3.5)
+        self.world().camera().watch(self._rat)
         # self.world().camera().watch(self._rat, -rat_datas[1]*1.5)
 
     @classmethod
@@ -124,7 +124,7 @@ class Lab(Level):
                 self._rat = new_rat
                 self.add_chunk(self._rat, self.SPRITES)
                 rat_datas = self.loader().get_width_from_ratio('rat.stance_01', self._start.height())
-                self.world().camera().watch(self._rat, rat_datas[1]/3.5)
+                self.world().camera().watch(self._rat)
 
 class Lab1(Lab):
     def __init__(self, resolution, navigator):
