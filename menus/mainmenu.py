@@ -8,6 +8,7 @@ from bloodyhell.widget import Widget
 from bloodyhell.widget.interface import Interface
 
 from levels.lab import *
+from jukebox import JukeBox
 
 
 class MainMenu(View):
@@ -23,6 +24,7 @@ class MainMenu(View):
         self._interface = Interface(
             os.path.join(settings.INTERFACES_DIR, 'mainmenu.xml')
         )
+        JukeBox().play('music.intro')
         self.add_layer(self._interface, 100)
         self._choice = 0
         self._up_tap = False

@@ -1,9 +1,11 @@
 from bloodyhell.world.actor import Actor
 from platforms.hurtingfloor import *
+from jukebox import JukeBox
 
 class Rat(Actor):
 
-    def __init__(self, position, size, level, evolution='lumi'):
+    def __init__(self, position, size,
+                    level, evolution='lumi', track='music.im_gonna_change'):
         super(Rat, self).__init__(
             evolution, 'stance', position, size
         )
@@ -25,6 +27,7 @@ class Rat(Actor):
         self.listen_key('left')
         self.listen_key('space')
         self.listen_key('lshift')
+        JukeBox().play(track)
 
     def update(self):
         super(Rat, self).update()
