@@ -22,6 +22,12 @@ class JukeBox(object):
             self._current_track.stop()
             self._current_track.play()
 
+    def stop(self):
+        if self._timer:
+            self._timer.cancel()
+        if self._current_track is not None:
+            self._current_track.stop()
+
     def play(self, track_name):
         if self._current_track_name == track_name:
             return
@@ -39,7 +45,7 @@ class JukeBox(object):
             self._current_track_name = track_name
             self._current_track = track
             self._current_track.play()
-            delay = self._current_track.get_length()
-            self._timer = threading.Timer(delay, self.reload)
-            self._timer.start()
+            #delay = self._current_track.get_length()
+            #self._timer = threading.Timer(delay, self.reload)
+            #self._timer.start()
 
