@@ -19,5 +19,8 @@ PACKAGES = {
     'lumi': '  Feeding developers  ',
     'grasshopper': '  Stealing your coins  ',
     'svg_json': '  Buying plants  ',
+    'pill_grasshopper': '  Eating pills  ',
+    'pill_tinyrat': '  Duh ! Winning !  ',
+    'pill_lumi': '  Stalking your mom  ',
     'music': ' Sacrificing rats '
 }

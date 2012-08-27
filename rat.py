@@ -115,7 +115,8 @@ class Rat(Actor):
             self.animate()
 
     def on_space_released(self):
-        pass
+        if self.get_y_velocity() > 0.001:
+            self.set_y_velocity(0.01)
 
     def on_lshift_pressed(self):
         self._run_multiple = 4
@@ -127,9 +128,6 @@ class Rat(Actor):
     def on_lshift_released(self):
         self._run_multiple = 1
         self._running = False
-        if self._pace != "jump":
-            if self._left_on or self._right_on:
-                self._pace = 'walk'
 
         self.animate()
 

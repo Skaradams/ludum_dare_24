@@ -8,6 +8,7 @@ from bloodyhell.widget import Widget
 from bloodyhell.widget.interface import Interface
 
 from levels.lab import *
+from comicstrip import ComicStrip
 from jukebox import JukeBox
 
 class MainMenu(View):
@@ -77,7 +78,7 @@ class MainMenu(View):
 
     def play(self):
         self._navigator.set_current_view(
-            Lab1(Widget.get_resolution(), self._navigator)
+            ComicStrip(Lab1(Widget.get_resolution(), self._navigator))
         )
 
     def on_return_pressed(self):
