@@ -2,20 +2,63 @@
 <!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="5999.529px" height="2199.46px" viewBox="0 0 5999.529 2199.46" enable-background="new 0 0 5999.529 2199.46"
+	 width="10169.078px" height="2853.439px" viewBox="0 0 10169.078 2853.439" enable-background="new 0 0 10169.078 2853.439"
 	 xml:space="preserve">
-<rect id="groundcage1" x="0" y="2065.373" stroke="#000000" stroke-miterlimit="10" width="1005.547" height="134.087"/>
-<rect id="groundcage2" x="1005.546" y="2065.373" stroke="#000000" stroke-miterlimit="10" width="1001.797" height="134.087"/>
-<rect id="groundcage3" x="4010.936" y="2065.373" stroke="#000000" stroke-miterlimit="10" width="1001.797" height="134.089"/>
-<rect id="groundcage1_1_" x="5012.732" y="2065.373" stroke="#000000" stroke-miterlimit="10" width="986.797" height="134.089"/>
-<rect id="groundcage3_1_" x="3009.139" y="2065.373" stroke="#000000" stroke-miterlimit="10" width="1001.797" height="134.089"/>
-<rect id="groundcage4" x="2007.342" y="2065.373" stroke="#000000" stroke-miterlimit="10" width="1001.796" height="134.089"/>
-<rect id="characterstart" x="559.751" y="1582.551" fill="#7CD2E2" stroke="#000000" stroke-miterlimit="10" width="101.976" height="482.822"/>
-<rect id="end" x="5355.75" y="1099.73" fill="#FBD849" stroke="#000000" stroke-miterlimit="10" width="150.381" height="241.41"/>
-<rect id="platformcage1_2_" x="3314.326" y="1823.965" fill="#6FBF58" stroke="#000000" stroke-miterlimit="10" width="383.643" height="241.41"/>
-<rect id="platformcage3_2_" x="5232.121" y="1341.141" fill="#6FBF58" stroke="#000000" stroke-miterlimit="10" width="766.746" height="724.232"/>
-<rect id="platformcage2_5_" x="4081.342" y="1582.549" fill="#6FBF58" stroke="#000000" stroke-miterlimit="10" width="383.372" height="482.826"/>
-<rect id="platformcage3_1_" x="4464.052" y="1341.141" fill="#6FBF58" stroke="#000000" stroke-miterlimit="10" width="766.745" height="724.232"/>
-<rect id="platformcage2_2_" x="3697.969" y="1582.549" fill="#6FBF58" stroke="#000000" stroke-miterlimit="10" width="383.373" height="482.826"/>
-<rect id="platformcage1_4_" x="2930.685" y="1823.965" fill="#6FBF58" stroke="#000000" stroke-miterlimit="10" width="383.642" height="241.41"/>
+<rect id="characterstart" x="152.114" y="1296.37" fill="#7CD2E2" stroke="#000000" stroke-miterlimit="10" width="85.176" height="403.285"/>
+<rect id="groundcage1_16_" y="1699.011" stroke="#000000" stroke-miterlimit="10" width="835.199" height="305.357"/>
+<rect id="groundcage2" x="835.199" y="1699.011" stroke="#000000" stroke-miterlimit="10" width="835.198" height="305.357"/>
+<rect id="groundcage1_18_" x="1670.397" y="1699.011" stroke="#000000" stroke-miterlimit="10" width="835.201" height="305.357"/>
+<rect id="groundcage3" x="2505.598" y="1699.011" stroke="#000000" stroke-miterlimit="10" width="835.199" height="305.357"/>
+<rect id="platformcage2_3_" x="1887.436" y="1080.073" fill="#9BCB56" stroke="#000000" stroke-miterlimit="10" width="363.341" height="206.31"/>
+<rect id="platformcage3" x="797.416" y="1492.692" fill="#DD192C" stroke="#000000" stroke-miterlimit="10" width="363.339" height="206.311"/>
+<rect id="platformcage1_9_" x="2250.776" y="1286.382" fill="#70BF58" stroke="#000000" stroke-miterlimit="10" width="363.341" height="206.31"/>
+<rect id="platformcage1_86_" x="2977.456" y="1492.696" fill="#70BF58" stroke="#000000" stroke-miterlimit="10" width="363.34" height="206.311"/>
+<rect id="platformcage2_7_" x="2977.456" y="873.758" fill="#9BCB56" stroke="#000000" stroke-miterlimit="10" width="363.34" height="206.31"/>
+<rect id="platformcage2_8_" x="3340.797" y="873.758" fill="#9BCB56" stroke="#000000" stroke-miterlimit="10" width="363.341" height="206.31"/>
+<rect id="groundcage4" x="7044.934" y="1699.975" stroke="#000000" stroke-miterlimit="10" width="835.201" height="305.357"/>
+<rect id="groundcage1_23_" x="7880.135" y="1905.506" stroke="#000000" stroke-miterlimit="10" width="835.199" height="305.357"/>
+<rect id="groundcage3_2_" x="8715.335" y="1905.506" stroke="#000000" stroke-miterlimit="10" width="835.201" height="305.357"/>
+<rect id="groundcage1_25_" x="9333.879" y="1493.664" stroke="#000000" stroke-miterlimit="10" width="835.199" height="305.355"/>
+<rect id="groundcage1_2_" x="3340.797" y="1699.332" stroke="#000000" stroke-miterlimit="10" width="835.2" height="305.357"/>
+<rect id="groundcage1_3_" x="4175.997" y="1699.332" stroke="#000000" stroke-miterlimit="10" width="835.199" height="305.357"/>
+<rect id="groundcage2_1_" x="5011.196" y="1699.332" stroke="#000000" stroke-miterlimit="10" width="835.201" height="305.357"/>
+<rect id="groundcage1_51_" x="7044.934" y="2005.332" stroke="#000000" stroke-miterlimit="10" width="835.201" height="305.357"/>
+<rect id="groundcage3_1_" x="4539.336" y="2005.332" stroke="#000000" stroke-miterlimit="10" width="835.2" height="305.357"/>
+<rect id="groundcage1_54_" x="6209.735" y="2005.332" stroke="#000000" stroke-miterlimit="10" width="835.199" height="305.357"/>
+<rect id="groundcage1_53_" x="5374.536" y="2005.332" stroke="#000000" stroke-miterlimit="10" width="835.199" height="305.357"/>
+<rect id="groundcage1_5_" x="9333.495" y="1799.02" stroke="#000000" stroke-miterlimit="10" width="835.201" height="305.359"/>
+<rect id="platformcage2_1_" x="4794.157" y="1491.804" fill="#9BCB56" stroke="#000000" stroke-miterlimit="10" width="363.342" height="206.31"/>
+<rect id="groundcage1_20_" x="6209.735" y="1699.975" stroke="#000000" stroke-miterlimit="10" width="835.199" height="305.357"/>
+<rect id="platformcage3_1_" x="1160.755" y="1491.808" fill="#DD192C" stroke="#000000" stroke-miterlimit="10" width="363.34" height="206.312"/>
+<rect id="platformcage3_3_" x="1524.096" y="1492.25" fill="#DD192C" stroke="#000000" stroke-miterlimit="10" width="363.34" height="206.312"/>
+<rect id="platformcage3_2_" x="1887.437" y="1491.365" fill="#DD192C" stroke="#000000" stroke-miterlimit="10" width="363.34" height="206.312"/>
+<rect id="platformcage3_4_" x="1524.096" y="1286.382" fill="#DD192C" stroke="#000000" stroke-miterlimit="10" width="363.34" height="206.311"/>
+<rect id="platformcage1_6_" x="1160.755" y="1286.382" fill="#70BF58" stroke="#000000" stroke-miterlimit="10" width="363.34" height="206.311"/>
+<rect id="platformcage2_2_" x="1887.436" y="1286.382" fill="#9BCB56" stroke="#000000" stroke-miterlimit="10" width="363.341" height="206.311"/>
+<rect id="platformcage3_5_" x="2250.777" y="1079.186" fill="#DD192C" stroke="#000000" stroke-miterlimit="10" width="363.34" height="206.312"/>
+<rect id="platformcage3_6_" x="2250.776" y="1492.696" fill="#DD192C" stroke="#000000" stroke-miterlimit="10" width="363.34" height="206.312"/>
+<rect id="platformcage3_10_" x="2977.458" y="1286.382" fill="#DD192C" stroke="#000000" stroke-miterlimit="10" width="363.34" height="206.311"/>
+<rect id="platformcage3_11_" x="3340.798" y="1491.808" fill="#DD192C" stroke="#000000" stroke-miterlimit="10" width="363.34" height="206.312"/>
+<rect id="platformcage3_19_" x="7516.795" y="1493.664" fill="#DD192C" stroke="#000000" stroke-miterlimit="10" width="363.34" height="206.311"/>
+<rect id="platformcage4" x="6790.114" y="1493.664" fill="#535BA2" stroke="#000000" stroke-miterlimit="10" width="363.342" height="206.311"/>
+<rect id="platformcage3_21_" x="6426.778" y="1493.664" fill="#DD192C" stroke="#000000" stroke-miterlimit="10" width="363.336" height="206.311"/>
+<rect id="platformcage4_1_" x="7153.456" y="1491.804" fill="#535BA2" stroke="#000000" stroke-miterlimit="10" width="363.342" height="206.31"/>
+<rect id="platformcage4_2_" x="5157.499" y="1491.808" fill="#535BA2" stroke="#000000" stroke-miterlimit="10" width="363.341" height="206.312"/>
+<rect id="platformcage4_3_" x="4794.158" y="1285.498" fill="#535BA2" stroke="#000000" stroke-miterlimit="10" width="363.341" height="206.31"/>
+<rect id="platformcage4_12_" x="4067.477" y="874.09" fill="#535BA2" stroke="#000000" stroke-miterlimit="10" width="363.342" height="206.311"/>
+<rect id="platformcage4_11_" x="4067.478" y="1493.021" fill="#535BA2" stroke="#000000" stroke-miterlimit="10" width="363.342" height="206.312"/>
+<rect id="platformcage4_10_" x="4067.477" y="1286.711" fill="#535BA2" stroke="#000000" stroke-miterlimit="10" width="363.342" height="206.31"/>
+<rect id="platformcage4_9_" x="4067.477" y="1080.4" fill="#535BA2" stroke="#000000" stroke-miterlimit="10" width="363.342" height="206.311"/>
+<rect id="platformcage4_5_" x="3340.797" y="1080.4" fill="#535BA2" stroke="#000000" stroke-miterlimit="10" width="363.341" height="206.311"/>
+<rect id="platformcage4_4_" x="3340.797" y="1286.711" fill="#535BA2" stroke="#000000" stroke-miterlimit="10" width="363.341" height="206.31"/>
+<rect id="platformcage4_6_" x="2977.456" y="1080.4" fill="#535BA2" stroke="#000000" stroke-miterlimit="10" width="363.34" height="206.311"/>
+<rect id="end_2_" x="9751.479" y="1090.38" fill="#FBD849" stroke="#000000" stroke-miterlimit="10" width="251.217" height="403.284"/>
+<rect id="spadesdown_3_" x="3704.139" y="1663.356" fill="#C94A96" stroke="#000000" stroke-miterlimit="10" width="363.338" height="35.976"/>
+<rect id="spadesdown_1_" x="2614.117" y="1663.031" fill="#C94A96" stroke="#000000" stroke-miterlimit="10" width="363.338" height="35.976"/>
+<rect id="spadesdown_2_" x="4430.819" y="1663.356" fill="#C94A96" stroke="#000000" stroke-miterlimit="10" width="363.338" height="35.976"/>
+<rect id="spadesdown_4_" x="5846.395" y="1968.713" fill="#C94A96" stroke="#000000" stroke-miterlimit="10" width="363.34" height="35.977"/>
+<rect id="spadesdown_5_" x="7880.135" y="1869.531" fill="#C94A96" stroke="#000000" stroke-miterlimit="10" width="363.338" height="35.975"/>
+<rect id="spadesdown_6_" x="8243.474" y="1869.531" fill="#C94A96" stroke="#000000" stroke-miterlimit="10" width="363.338" height="35.975"/>
+<rect id="spadesdown_7_" x="8606.812" y="1869.531" fill="#C94A96" stroke="#000000" stroke-miterlimit="10" width="363.338" height="35.975"/>
+<rect id="spadesdown_8_" x="8970.149" y="1869.531" fill="#C94A96" stroke="#000000" stroke-miterlimit="10" width="363.342" height="35.975"/>
 </svg>

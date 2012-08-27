@@ -1,8 +1,4 @@
-import os
-import sys
-
 from bloodyhell.world.fence import Fence
-from bloodyhell.resourceloader import ResourceLoader
 
 class GroundCage(Fence):
     def __init__(self, index, data):
