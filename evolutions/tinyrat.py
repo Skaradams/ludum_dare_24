@@ -7,7 +7,9 @@ class TinyRat(Rat):
         divider = 17
         (width, height) = (size[0]/divider, size[1]/divider)
         size = (width, height)
-        super(TinyRat, self).__init__(position, level, 'tinyrat', size)
-        (width, height) = self.size()
-        self._size = (width, height)
+        super(TinyRat, self).__init__(
+            position, level, 'tinyrat', size,  track='music.that_tiny_me'
+        )
         self._walk_vel = 8.0
+        
+

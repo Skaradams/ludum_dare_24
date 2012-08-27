@@ -1,13 +1,14 @@
 from bloodyhell.world.actor import Actor
 from platforms.hurtingfloor import *
+from jukebox import JukeBox
 from bloodyhell.resourceloader import ResourceLoader
 
 class Rat(Actor):
 
-    def __init__(self, position, level, evolution='rat', size=None, base_height=None):
+    def __init__(self, position, level, evolution='rat', size=None, base_height=None, track='music.im_gonna_change'):
        
         if size == None:
-            print "Ca va dans Rat",base_height
+
             size = ResourceLoader().get_width_from_ratio('rat.stance_01', base_height)
 
         super(Rat, self).__init__(
@@ -32,6 +33,8 @@ class Rat(Actor):
         self.listen_key('space')
         self.listen_key('lshift')
         self.set_hitbox({'left': 17.5, 'top': 3.0})
+        JukeBox().play(track)
+
 
     def update(self):
         super(Rat, self).update()
