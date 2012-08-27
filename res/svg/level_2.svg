@@ -51,7 +51,7 @@
 <rect id="end_4_" x="8832.82" y="2011.481" fill="#FBD849" width="125.633" height="201.682"/>
 <rect id="pillevolutiond_4_" x="13172.736" y="3862.036" fill="#9A549C" width="50.684" height="61.855"/>
 <rect id="pillevolutiond_3_" x="11500.555" y="3408.366" fill="#9A549C" width="50.684" height="61.855"/>
-<rect id="pillevolutionb_3_" x="15023.102" y="4625.587" fill="#BD5D32" width="50.688" height="61.856"/>
+<rect id="pillevolutionb_3_" x="14756.945" y="4617.368" fill="#BD5D32" width="50.688" height="61.856"/>
 <rect id="platformcage2_9_" x="6284.684" y="3250.84" fill="#9BCB56" width="363.413" height="206.351"/>
 <rect id="platformcage2_21_" x="5557.858" y="2631.781" fill="#9BCB56" width="363.412" height="206.354"/>
 <rect id="platformcage1_59_" x="5557.859" y="1806.374" fill="#70BF58" width="363.413" height="206.351"/>
@@ -141,20 +141,8 @@
 <rect id="spadesdown_6_" x="5921.271" y="3421.208" fill="#C94A96" width="363.411" height="35.982"/>
 <rect id="spadesdown_7_" x="6648.099" y="3421.208" fill="#C94A96" width="363.411" height="35.982"/>
 <rect id="spadesdown_8_" x="7011.512" y="3421.208" fill="#C94A96" width="363.411" height="35.982"/>
-<rect id="spadesdown_11_" x="9055.17" y="3705.588" fill="#C94A96" width="363.41" height="35.983"/>
 <rect id="spadesdown_12_" x="8063.963" y="4981.236" fill="#C94A96" width="363.412" height="35.983"/>
 <rect id="spadesdown_13_" x="8790.793" y="4979.588" fill="#C94A96" width="363.412" height="35.983"/>
-<rect id="spadesdown_14_" x="6421.632" y="4774.553" fill="#C94A96" width="363.411" height="35.983"/>
-<rect id="spadesdown_15_" x="6785.043" y="4774.552" fill="#C94A96" width="363.411" height="35.983"/>
-<rect id="spadesdown_16_" x="9788.971" y="4773.236" fill="#C94A96" width="363.41" height="35.983"/>
-<rect id="spadesdown_17_" x="9425.559" y="4773.235" fill="#C94A96" width="363.412" height="35.983"/>
-<rect id="spadesdown_18_" x="10401.979" y="4773.333" fill="#C94A96" width="363.41" height="35.983"/>
-<rect id="spadesdown_19_" x="11334.014" y="4773.332" fill="#C94A96" width="363.412" height="35.983"/>
-<rect id="spadesdown_20_" x="10970.6" y="4773.333" fill="#C94A96" width="363.412" height="35.983"/>
-<rect id="spadesdown_21_" x="11902.633" y="4773.332" fill="#C94A96" width="363.411" height="35.983"/>
-<rect id="spadesdown_22_" x="12266.047" y="4773.331" fill="#C94A96" width="363.413" height="35.983"/>
-<rect id="spadesdown_26_" x="12834.664" y="4773.236" fill="#C94A96" width="363.412" height="35.983"/>
-<rect id="spadesdown_25_" x="13198.078" y="4773.235" fill="#C94A96" width="363.412" height="35.983"/>
 <rect id="spadesdown_24_" x="10980.773" y="4001.475" fill="#C94A96" width="363.412" height="35.983"/>
 <rect id="spadesdown_23_" x="11344.188" y="4001.474" fill="#C94A96" width="363.412" height="35.983"/>
 <rect id="spadesdown_28_" x="10253.949" y="4001.475" fill="#C94A96" width="363.41" height="35.983"/>
@@ -198,4 +186,9 @@
 	<rect id="blank_2_" x="15365.383" y="665.004" fill="#BD6334" width="835.367" height="2004.368"/>
 </g>
 <rect id="blank_1_" x="48.25" y="227.954" fill="#BD6334" width="134" height="3819.033"/>
+<rect id="backlayer1_323_" x="726.116" y="2769.165" fill="#48C4C4" width="583.003" height="411.25"/>
+<rect id="backlayer1_1_" x="8835.574" y="4375.006" fill="#48C4C4" width="583.004" height="411.25"/>
+<rect id="backlayer4_2_" x="8835.574" y="3065.61" fill="#FEE85D" width="583.004" height="411.25"/>
+<rect id="backlayer4_3_" x="14782.289" y="4038.187" fill="#FEE85D" width="583.005" height="411.25"/>
+<rect id="backlayer1_2_" x="9134.057" y="1549.406" fill="#48C4C4" width="583.003" height="411.25"/>
 </svg>
