@@ -1,10 +1,11 @@
-import settings
-
-from bloodyhell.game import Game
-from loadingscreen import LoadingScreen
 
 
 def run():
+    import settings
+
+    from bloodyhell.game import Game
+    from loadingscreen import LoadingScreen
+
     game = Game(
         'Pimp My Rat',
         settings.RESOLUTION,

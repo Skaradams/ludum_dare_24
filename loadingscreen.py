@@ -33,6 +33,7 @@ class LoadingScreen(View):
         super(LoadingScreen, self).__init__()
         self.loader().load_package('loading')
         self.loader().load_package('interfaces')
+
         resolution = Widget.get_resolution()
         res_width, res_height = resolution
         self.add_layer(
