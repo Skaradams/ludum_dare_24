@@ -50,7 +50,7 @@ class Lab(Level):
         self._next_level = None
         self._resolution = resolution
         self._navigator = navigator
-        self._frame_limit = 4
+        self._frame_limit = 3
         self._frame_count = 0
 
         self._chunks = {
@@ -63,6 +63,9 @@ class Lab(Level):
             'platformcage3': PlatformCage3,
             'platformcage4': PlatformCage4,
             'backlayer1': BackLayer1,
+            'backlayer2': BackLayer2,
+            'backlayer3': BackLayer3,
+            'backlayer4': BackLayer4,
             'blank': InvisibleWall,
             'characterstart': Start,
             'end': Flag,
@@ -70,7 +73,7 @@ class Lab(Level):
             'spadesup': SpadesUp,
             'spadesleft': SpadesLeft,
             'spadesright': SpadesRight,
-            # 'spadesdown': SpadesDown,
+            'spadesdown': SpadesDown,
             'pillevolutiona': TinyRatPill,
             'pillevolutionb': GrassHopperPill,
             'pillevolutiond': LumiPill
@@ -85,18 +88,18 @@ class Lab(Level):
             self.BACKGROUND
         )
 
-
     def on_quit(self, event):
         self._navigator.push(InGameMenu())
 
     def add_chunks(self):
-        print "ADDING CHUNKS FOR : " + self.__class__.__name__
         for rect_id in self._level:
             data = self._level[rect_id]
             self.add_platform(rect_id.split('_')[0], data)
 
     def add_platform(self, chunk_id, data):
         if chunk_id in self._chunks:
+            # Position Hack (gap between platforms)
+
             chunk = self._chunks[chunk_id](data)
             if chunk_id == "characterstart":
                 self._start = chunk
@@ -124,14 +127,13 @@ class Lab(Level):
         # self.world().camera().watch(self._rat, -rat_datas[1]*1.5)
 
     def reset_rats(self):
-        Lab.rats['normal'].reset()
-        Lab.rats['grasshopper'].reset()
-        Lab.rats['tinyrat'].reset()
-        Lab.rats['lumi'].reset()
+        Lab.rats['normal'].reset(self)
+        Lab.rats['grasshopper'].reset(self)
+        Lab.rats['tinyrat'].reset(self)
+        Lab.rats['lumi'].reset(self)
 
     @classmethod
     def reset(cls, resolution, navigator):
-        print navigator
         navigator.set_current_view(cls(resolution, navigator))
 
     def navigator(self):
@@ -165,7 +167,6 @@ class Lab(Level):
     def pill_spawn(self):
         for pill in Pill.pill_instances['grasshopper']:
             if self._rat.contains(pill) and self._rat.__class__ != GrassHopper:
-                print self._start.height()
                 new_rat = Lab.rats['grasshopper']
                 new_rat.set_position(self._rat.position())
                 # new_rat = GrassHopper(position=(self._rat.position()[0], self._rat.position()[1]), level=self, base_height=self._start.height())
@@ -211,15 +212,11 @@ class Lab(Level):
 class Lab1(Lab):
     def __init__(self, resolution, navigator):
         super(Lab1, self).__init__(resolution, navigator, 'static.comic_strip_2')
-        print 'pills', Pill.pill_instances
-        print 'shadows', Shadow.shadow_instances
+
         self._level = self.loader().get_raw_resource('svg_json.level_1')
         self._next_level = Lab2
         self.add_chunks()
-        # self.add_layer(
-        #     Shadow(self._resolution),
-        #     self.NEAR_DECORATION_2
-        # )
+
         Lab.rats['normal'] = Rat(position=(self._start.x(), self._start.y()), level=self, base_height=self._start.height())
         Lab.rats['grasshopper'] = GrassHopper(position=(self._start.x(), self._start.y()), level=self, base_height=self._start.height())
         Lab.rats['tinyrat'] = TinyRat(position=(self._start.x(), self._start.y()), level=self, base_height=self._start.height())
@@ -232,8 +229,7 @@ class Lab1(Lab):
 class Lab2(Lab):
     def __init__(self, resolution, navigator):
         super(Lab2, self).__init__(resolution, navigator, 'static.comic_strip_3')
-        print 'pills', Pill.pill_instances
-        print 'shadows', Shadow.shadow_instances
+
         self._level = self.loader().get_raw_resource('svg_json.level_2')
         self._next_level = Lab3
         self.add_chunks()
@@ -243,8 +239,7 @@ class Lab2(Lab):
 class Lab3(Lab):
     def __init__(self, resolution, navigator):
         super(Lab3, self).__init__(resolution, navigator, 'static.comic_strip_4')
-        print 'pills', Pill.pill_instances
-        print 'shadows', Shadow.shadow_instances
+
         self._level = self.loader().get_raw_resource('svg_json.level_3')
         self._next_level = Lab4
         self.add_chunks()
@@ -253,8 +248,7 @@ class Lab3(Lab):
 class Lab4(Lab):
     def __init__(self, resolution, navigator):
         super(Lab4, self).__init__(resolution, navigator, 'static.comic_strip_5')
-        print 'pills', Pill.pill_instances
-        print 'shadows', Shadow.shadow_instances
+
         self._level = self.loader().get_raw_resource('svg_json.level_4')
         self._next_level = Lab5
         self.add_chunks()

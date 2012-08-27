@@ -14,14 +14,13 @@ class Rat(Actor):
             evolution, 'stance', (position[0], position[1]), size
         )
 
-        self._level = level
         self._walk_vel = 5.0
         self._jump_vel = 17.5
 
         self._run_multiple = 1
         self._x_vel = 0
 
-        self.reset()
+        self.reset(level)
         self.listen_key('right')
         self.listen_key('left')
         self.listen_key('space')
@@ -71,7 +70,6 @@ class Rat(Actor):
         self.animate()
 
     def on_left_pressed(self):
-        print self
         self._left_on = True
 
         if self._pace != "jump":
@@ -144,7 +142,8 @@ class Rat(Actor):
         else:
             self.loop(self._pace)
 
-    def reset(self):
+    def reset(self, level):
+        self._level = level
         self._right_on = False
         self._left_on = False
         self._orientation = "right"

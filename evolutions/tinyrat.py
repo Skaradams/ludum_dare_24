@@ -10,6 +10,6 @@ class TinyRat(Rat):
         super(TinyRat, self).__init__(
             position, level, 'tinyrat', size,  track='music.that_tiny_me'
         )
-        self._walk_vel = 8.0
-        
+        self._walk_vel = 5.0
+        self._jump_vel = 15.0
 

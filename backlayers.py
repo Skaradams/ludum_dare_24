@@ -11,3 +11,15 @@ class BackLayer(Decoration):
 class BackLayer1(BackLayer):
     def __init__(self, data):
         super(BackLayer1, self).__init__(data, 'backlayer1')
+
+class BackLayer2(BackLayer):
+    def __init__(self, data):
+        super(BackLayer2, self).__init__(data, 'backlayer2')
+
+class BackLayer3(BackLayer):
+    def __init__(self, data):
+        super(BackLayer3, self).__init__(data, 'backlayer3')
+
+class BackLayer4(BackLayer):
+    def __init__(self, data):
+        super(BackLayer4, self).__init__(data, 'backlayer4')
