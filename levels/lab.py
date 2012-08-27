@@ -13,6 +13,8 @@ from platforms.hurtingfloor import *
 from platforms.start import Start
 from platforms.flag import Flag
 
+from shadow import *
+from backlayers import *
 from menus.ingamemenu import InGameMenu
 from comicstrip import ComicStrip
 
@@ -23,8 +25,13 @@ from evolutions.tinyrat import TinyRat
 from evolutions.lumi import Lumi
 
 class Lab(Level):
-
-    def __init__(self, resolution, navigator):
+    rats = {
+        'rat': None,
+        'grasshopper': None,
+        'tinyrat': None,
+        'lumi': None,
+    }
+    def __init__(self, resolution, navigator, strip_id='static.comic_strip_1'):
         res_width, res_height = resolution
         super(Lab, self).__init__(camera_config={
             'target': (50, -21),
@@ -35,6 +42,7 @@ class Lab(Level):
         }, gravity=(0, -33.0))
         self.listen('quit')
 
+        self._strip_id = strip_id
         self._level = None
         self._start = None
         self._end = None
@@ -42,6 +50,8 @@ class Lab(Level):
         self._next_level = None
         self._resolution = resolution
         self._navigator = navigator
+        self._frame_limit = 4
+        self._frame_count = 0
 
         self._chunks = {
             'groundcage1': GroundCage1,
@@ -52,23 +62,29 @@ class Lab(Level):
             'platformcage2': PlatformCage2,
             'platformcage3': PlatformCage3,
             'platformcage4': PlatformCage4,
+            'backlayer1': BackLayer1,
             'blank': InvisibleWall,
             'characterstart': Start,
             'end': Flag,
-            'spadesdown': SpadesDown,
-            'spadesleft': SpadesDown,
-            'spadesright': SpadesDown,
-            'spadesdown': SpadesDown,
+            'shadows': Shadow,
+            'spadesup': SpadesUp,
+            'spadesleft': SpadesLeft,
+            'spadesright': SpadesRight,
+            # 'spadesdown': SpadesDown,
             'pillevolutiona': TinyRatPill,
             'pillevolutionb': GrassHopperPill,
             'pillevolutiond': LumiPill
         }
+        Pill.clear_instances()
+        Shadow.clear_instances()
+        self._shadow_layer = Layer(position=(0, 0), size=resolution).fill('000000')
 
         # Add background (filled with grey)
         self.add_layer(
             Layer(position=(0, 0), size=resolution).fill('191919'),
             self.BACKGROUND
         )
+
 
     def on_quit(self, event):
         self._navigator.push(InGameMenu())
@@ -91,14 +107,27 @@ class Lab(Level):
             if chunk_id == "spades":
                 self._hurting_floors.append(chunk)
 
-            super(Lab, self).add_chunk(chunk, self.BACKGROUND)
+            if isinstance(chunk, BackLayer):
+                layer_pos = self.BACKGROUND
+                
+            else:
+                layer_pos = self.BACKGROUND_1
+            super(Lab, self).add_chunk(chunk, layer_pos)
 
     def add_rat(self):
-        self._rat = Rat(position=(self._start.x(), self._start.y()), level=self, base_height=self._start.height())
+        self._rat = Lab.rats['normal']
+        self.reset_rats()
         # self._rat.set_hitbox({'left': 17.5, 'top': 3.0})
         self.add_chunk(self._rat, self.SPRITES)
+        self._rat.set_position((self._start.x(), self._start.y()))
         self.watch_rat()
         # self.world().camera().watch(self._rat, -rat_datas[1]*1.5)
+
+    def reset_rats(self):
+        Lab.rats['normal'].reset()
+        Lab.rats['grasshopper'].reset()
+        Lab.rats['tinyrat'].reset()
+        Lab.rats['lumi'].reset()
 
     @classmethod
     def reset(cls, resolution, navigator):
@@ -117,32 +146,57 @@ class Lab(Level):
     def on_frame(self, delta):
         super(Lab, self).on_frame(delta)
         if self._rat.contains(self._end) and self._next_level != None:
-            # self._navigator.set_current_view(self._next_level(self._resolution, self._navigator))
-            self._navigator.set_current_view(ComicStrip(self._next_level(self._resolution, self._navigator)))
-        self.pill_spawn()
+            self._navigator.set_current_view(self._next_level(self._resolution, self._navigator))
+            self._navigator.set_current_view(ComicStrip(self._next_level(self._resolution, self._navigator), self._strip_id))
+        if self._frame_count == self._frame_limit:
+            self.pill_spawn()
+            self.check_shadows()
+            self._frame_count = 0
+        self._frame_count += 1
 
     def change_rat(self, new_rat):
+        self.reset_rats()
         self.remove_chunk(self._rat)
         self._rat = new_rat
         self.add_chunk(self._rat, self.SPRITES)
         self.watch_rat()
 
+
     def pill_spawn(self):
         for pill in Pill.pill_instances['grasshopper']:
             if self._rat.contains(pill) and self._rat.__class__ != GrassHopper:
                 print self._start.height()
-                new_rat = GrassHopper(position=(self._rat.position()[0], self._rat.position()[1]), level=self, base_height=self._start.height())
+                new_rat = Lab.rats['grasshopper']
+                new_rat.set_position(self._rat.position())
+                # new_rat = GrassHopper(position=(self._rat.position()[0], self._rat.position()[1]), level=self, base_height=self._start.height())
                 self.change_rat(new_rat)
-
+                
         for pill in Pill.pill_instances['tinyrat']:
             if self._rat.contains(pill) and self._rat.__class__ != TinyRat:
-                new_rat = TinyRat(position=(self._rat.position()[0], self._rat.position()[1]), level=self, base_height=self._start.height())
+                new_rat = Lab.rats['tinyrat']
+                new_rat.set_position(self._rat.position())
+                # new_rat = TinyRat(position=(self._rat.position()[0], self._rat.position()[1]), level=self, base_height=self._start.height())
                 self.change_rat(new_rat)
 
         for pill in Pill.pill_instances['lumi']:
             if self._rat.contains(pill) and self._rat.__class__ != Lumi:
-                new_rat = Lumi(position=(self._rat.position()[0], self._rat.position()[1]), level=self, base_height=self._start.height())
-                self.change_rat(new_rat)
+                new_rat = Lab.rats['lumi']
+                new_rat.set_position(self._rat.position())
+                self.change_rat(new_rat)                
+
+    def check_shadows(self):
+        applyshadow = False
+        for shadow in Shadow.shadow_instances:
+            if shadow.contains(self._rat) and self._rat.__class__ != Lumi:
+                applyshadow = True
+
+        if applyshadow:        
+            self.add_layer(
+                self._shadow_layer,
+                self.NEAR_DECORATION
+            )
+        else:
+            self.remove_layer(self._shadow_layer)
 
     def watch_rat(self):
         rat_width, rat_height = self._rat.real_size()
@@ -156,17 +210,30 @@ class Lab(Level):
 
 class Lab1(Lab):
     def __init__(self, resolution, navigator):
-        print "I AM LEVEL 1"
-        super(Lab1, self).__init__(resolution, navigator)
+        super(Lab1, self).__init__(resolution, navigator, 'static.comic_strip_2')
+        print 'pills', Pill.pill_instances
+        print 'shadows', Shadow.shadow_instances
         self._level = self.loader().get_raw_resource('svg_json.level_1')
         self._next_level = Lab2
         self.add_chunks()
+        # self.add_layer(
+        #     Shadow(self._resolution),
+        #     self.NEAR_DECORATION_2
+        # )
+        Lab.rats['normal'] = Rat(position=(self._start.x(), self._start.y()), level=self, base_height=self._start.height())
+        Lab.rats['grasshopper'] = GrassHopper(position=(self._start.x(), self._start.y()), level=self, base_height=self._start.height())
+        Lab.rats['tinyrat'] = TinyRat(position=(self._start.x(), self._start.y()), level=self, base_height=self._start.height())
+        Lab.rats['lumi'] = Lumi(position=(self._start.x(), self._start.y()), level=self, base_height=self._start.height())
+
         self.add_rat()
+
         # self.load_music()
 
 class Lab2(Lab):
     def __init__(self, resolution, navigator):
-        super(Lab2, self).__init__(resolution, navigator)
+        super(Lab2, self).__init__(resolution, navigator, 'static.comic_strip_3')
+        print 'pills', Pill.pill_instances
+        print 'shadows', Shadow.shadow_instances
         self._level = self.loader().get_raw_resource('svg_json.level_2')
         self._next_level = Lab3
         self.add_chunks()
@@ -175,7 +242,9 @@ class Lab2(Lab):
 
 class Lab3(Lab):
     def __init__(self, resolution, navigator):
-        super(Lab3, self).__init__(resolution, navigator)
+        super(Lab3, self).__init__(resolution, navigator, 'static.comic_strip_4')
+        print 'pills', Pill.pill_instances
+        print 'shadows', Shadow.shadow_instances
         self._level = self.loader().get_raw_resource('svg_json.level_3')
         self._next_level = Lab4
         self.add_chunks()
@@ -183,7 +252,9 @@ class Lab3(Lab):
 
 class Lab4(Lab):
     def __init__(self, resolution, navigator):
-        super(Lab4, self).__init__(resolution, navigator)
+        super(Lab4, self).__init__(resolution, navigator, 'static.comic_strip_5')
+        print 'pills', Pill.pill_instances
+        print 'shadows', Shadow.shadow_instances
         self._level = self.loader().get_raw_resource('svg_json.level_4')
         self._next_level = Lab5
         self.add_chunks()
@@ -191,7 +262,7 @@ class Lab4(Lab):
 
 class Lab5(Lab):
     def __init__(self, resolution, navigator):
-        super(Lab5, self).__init__(resolution, navigator)
+        super(Lab5, self).__init__(resolution, navigator, 'static.comic_strip_6')
         self._level = self.loader().get_raw_resource('svg_json.level_5')
         self._next_level = None
         self.add_chunks()

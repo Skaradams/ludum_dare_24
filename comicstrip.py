@@ -8,7 +8,7 @@ from bloodyhell.widget.interface import Interface
 from bloodyhell.widget import Widget
 
 class ComicStrip(View):
-    def __init__(self, level):
+    def __init__(self, level, image_id):
         super(ComicStrip, self).__init__()
 
         self.add_layer(
@@ -20,11 +20,13 @@ class ComicStrip(View):
         self._res_width = res_width
         self._res_height = res_height
         self._level = level
+
         self._interface = Interface('interfaces.comicstrip')
-        self._height = self.loader().get_raw_resource('static.comic_strip_1').get_height()
+        self._height = self.loader().get_raw_resource(image_id).get_height()
+
         self._increment = 100
 
-        self._interface.get('comicstrip').style('background-image', 'static.comic_strip_1')
+        self._interface.get('comicstrip').style('background-image', image_id)
         self.add_layer(self._interface, 100)
 
         self.listen_key('return')
@@ -52,8 +54,7 @@ class ComicStrip(View):
 
     def on_return_pressed(self):
         print self._res_height - int(self._interface.get('comicstrip').style('top')), self._height
-        if self._res_height - int(self._interface.get('comicstrip').style('top')) > self._height:
-            self._navigator.set_current_view(self._level)
+        self._navigator.set_current_view(self._level)
 
     def on_return_released(self):
         pass

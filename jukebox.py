@@ -29,6 +29,7 @@ class JukeBox(object):
             self._current_track.stop()
 
     def play(self, track_name):
+        return
         if self._current_track_name == track_name:
             return
         track = None

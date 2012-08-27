@@ -6,7 +6,7 @@ class Start(Decoration):
         self._y = data['y']
         self._width = data['width']
         self._height = data['height']
-        super(Start, self).__init__((self._x, self._y), (self._width, self._height), 'static.door_cage')
+        super(Start, self).__init__((self._x, self._y), (self._width, self._height), 'static.blank')
 
     def x(self):
         return self._x
