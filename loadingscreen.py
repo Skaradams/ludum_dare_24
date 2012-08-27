@@ -12,7 +12,6 @@ from bloodyhell.layer.animatedlayer import AnimatedLayer
 
 from menus.mainmenu import MainMenu
 
-
 class LoadingTask(threading.Thread):
 
     PACKAGES = {
@@ -20,8 +19,9 @@ class LoadingTask(threading.Thread):
         'rat': '  Rendering beards  ',
         'tinyrat': '  Generating peaches ',
         'lumi': '  Feeding developers  ',
+        'grasshopper': '  Stealing your coins  ',
         'svg_json': '  Buying plants  ',
-        'music': ' Sacrifiing rats '
+        'music': ' Sacrificing rats '
     }
 
     def __init__(self, loader, queue):

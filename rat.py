@@ -3,9 +3,9 @@ from platforms.hurtingfloor import *
 
 class Rat(Actor):
 
-    def __init__(self, position, size, level, evolution='lumi'):
+    def __init__(self, position, size, level, evolution='rat'):
         super(Rat, self).__init__(
-            evolution, 'stance', position, size
+            evolution, 'stance', (position[0], position[1]), size
         )
         print self
         self._level = level
@@ -25,6 +25,7 @@ class Rat(Actor):
         self.listen_key('left')
         self.listen_key('space')
         self.listen_key('lshift')
+        self.set_hitbox({'left': 17.5, 'top': 3.0})
 
     def update(self):
         super(Rat, self).update()
@@ -35,6 +36,7 @@ class Rat(Actor):
         elif self._left_on:
             self._x_vel = -self._walk_vel
         self.set_x_velocity(self._x_vel * self._run_multiple)
+        print self.get_y_velocity()
 
     def on_right_pressed(self):
         self._right_on = True
@@ -99,7 +101,7 @@ class Rat(Actor):
         self.animate()
 
     def on_space_pressed(self):
-        if self.get_y_velocity() < 1e-10:
+        if self.get_y_velocity() < 0.001 and self.get_y_velocity() > -0.001:
             self._pace = 'jump'
             self.set_y_velocity(self._jump_vel)
             self.animate()

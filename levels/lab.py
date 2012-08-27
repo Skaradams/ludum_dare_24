@@ -88,7 +88,7 @@ class Lab(Level):
         rat_datas = self.loader().get_width_from_ratio('rat.stance_01', self._start.height())
 
         self._rat = Rat(position=(self._start.x(), self._start.y()), size=(rat_datas[0], rat_datas[1]), level=self)
-        self._rat.set_hitbox({'left': 17.5, 'top': 3.0})
+        # self._rat.set_hitbox({'left': 17.5, 'top': 3.0})
         self.add_chunk(self._rat, self.SPRITES)
         self.world().camera().watch(self._rat, rat_datas[1]/3.5)
         # self.world().camera().watch(self._rat, -rat_datas[1]*1.5)
@@ -111,15 +111,20 @@ class Lab(Level):
         super(Lab, self).on_frame(delta)
         if self._rat.contains(self._end) and self._next_level != None:
             self._navigator.set_current_view(self._next_level(self._resolution, self._navigator))
+        self.pill_spawn()
 
+        
+    
+    def pill_spawn(self):
         for pill in Pill.pill_instances['grasshopper']:
-            if self._rat.contains(pill):
-                print 'pill contains dude'
-                new_rat = GrassHopper(position=(self._rat.position()[0]+20.0, self._rat.position()[1]+20.0), size=self._rat.position(), level=self)
-
-                # TODO Remove with actor method
+            if self._rat.contains(pill) and self._rat.__class__ != GrassHopper:
+                new_rat = GrassHopper(position=(self._rat.position()[0], self._rat.position()[1]), size=self._rat.size(), level=self)
                 self.remove_chunk(self._rat)
+
                 self._rat = new_rat
+                self.add_chunk(self._rat, self.SPRITES)
+                rat_datas = self.loader().get_width_from_ratio('rat.stance_01', self._start.height())
+                self.world().camera().watch(self._rat, rat_datas[1]/3.5)
 
 class Lab1(Lab):
     def __init__(self, resolution, navigator):
