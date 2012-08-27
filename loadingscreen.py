@@ -20,6 +20,9 @@ class LoadingTask(threading.Thread):
         'tinyrat': '  Generating peaches ',
         'lumi': '  Feeding developers  ',
         'grasshopper': '  Stealing your coins  ',
+        'pill_grasshopper': '  Eating pills  ',
+        'pill_tinyrat': '  Duh ! Winning !  ',
+        'pill_lumi': '  Stalking your mom  ',
         'svg_json': '  Buying plants  ',
         'music': ' Sacrificing rats '
     }

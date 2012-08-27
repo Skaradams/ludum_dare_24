@@ -43,7 +43,6 @@ class ComicStrip(View):
     def on_down_released(self):
         pass
 
-
     def on_up_pressed(self):
         top = int(self._interface.get('comicstrip').style('top'))
         
@@ -52,7 +51,6 @@ class ComicStrip(View):
 
     def on_up_released(self):
         pass
-
 
     def on_return_pressed(self):
         print self._res_height - int(self._interface.get('comicstrip').style('top')), self._height

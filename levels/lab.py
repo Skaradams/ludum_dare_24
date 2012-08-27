@@ -7,6 +7,7 @@ from bloodyhell.layer.rect import Rect
 from bloodyhell.layer import Layer
 from platforms.groundcage import *
 from platforms.platformcage import *
+from platforms.invisiblewall import InvisibleWall
 from platforms.hurtingfloor import *
 
 from platforms.start import Start
@@ -51,6 +52,7 @@ class Lab(Level):
             'platformcage2': PlatformCage2,
             'platformcage3': PlatformCage3,
             'platformcage4': PlatformCage4,
+            'blank': InvisibleWall,
             'characterstart': Start,
             'end': Flag,
             'spadesdown': SpadesDown,
@@ -146,7 +148,10 @@ class Lab(Level):
         rat_width, rat_height = self._rat.real_size()
         rat_x, rat_y = self._rat.position()
         self.world().camera().watch(self._rat)
-        self.world().camera().set_width(rat_width * 5)
+        if self._rat.__class__ == TinyRat:
+            self.world().camera().set_width(rat_width * 9)
+        else:
+            self.world().camera().set_width(rat_width * 5)
         self.world().camera().set_y_high_filter_threshold(rat_height * 8)
 
 class Lab1(Lab):
