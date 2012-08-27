@@ -9,7 +9,6 @@ from bloodyhell.widget.interface import Interface
 
 from levels.lab import *
 
-
 class MainMenu(View):
 
     CHOICES = ['play', 'quit']
@@ -78,7 +77,7 @@ class MainMenu(View):
 
     def play(self):
         self._navigator.set_current_view(
-            Lab2(Widget.get_resolution(), self._navigator)
+            Lab1(Widget.get_resolution(), self._navigator)
         )
 
     def on_return_pressed(self):

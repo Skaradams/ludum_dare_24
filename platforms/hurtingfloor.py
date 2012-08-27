@@ -9,6 +9,15 @@ class HurtingFloor(Fence):
             image_id
         )
 
-class Spades(HurtingFloor):
+class SpadesDown(HurtingFloor):
     def __init__(self, data):
-        super(Spades, self).__init__(data, 'static.flag')
+        super(SpadesDown, self).__init__(data, 'static.spades_bottom')
+class SpadesUp(HurtingFloor):
+    def __init__(self, data):
+        super(SpadesUp, self).__init__(data, 'static.spades_top')
+class SpadesLeft(HurtingFloor):
+    def __init__(self, data):
+        super(SpadesLeft, self).__init__(data, 'static.spades_left')
+class SpadesRight(HurtingFloor):
+    def __init__(self, data):
+        super(SpadesRight, self).__init__(data, 'static.spades_right')

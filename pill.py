@@ -2,7 +2,9 @@ from bloodyhell.world.decoration import Decoration
 
 class Pill(Decoration):
     pill_instances = {
-        'grasshopper': []
+        'grasshopper': [],
+        'tinyrat': [],
+        'lumi': [],
     }
     def __init__(self, data, image_id):
         self._x = data['x']
@@ -15,3 +17,13 @@ class GrassHopperPill(Pill):
     def __init__(self, data):
         super(GrassHopperPill, self).__init__(data, 'static.pill_grasshopper')
         Pill.pill_instances['grasshopper'].append(self)
+
+class TinyRatPill(Pill):
+    def __init__(self, data):
+        super(TinyRatPill, self).__init__(data, 'static.pill_tiny')
+        Pill.pill_instances['tinyrat'].append(self)
+
+class LumiPill(Pill):
+    def __init__(self, data):
+        super(LumiPill, self).__init__(data, 'static.pill_lumi')
+        Pill.pill_instances['lumi'].append(self)

@@ -17,6 +17,8 @@ from menus.ingamemenu import InGameMenu
 from pill import *
 from rat import Rat
 from evolutions.grasshopper import GrassHopper
+from evolutions.tinyrat import TinyRat
+from evolutions.lumi import Lumi
 
 class Lab(Level):
 
@@ -24,10 +26,10 @@ class Lab(Level):
         res_width, res_height = resolution
         super(Lab, self).__init__(camera_config={
             'target': (50, -21),
-            'width': 25,
+            'width': 30,
             'rect': Rect((10, 10), (res_width - 20, res_height - 20)),
-            'limits': {'left': 0.0, 'bottom': -30.0,
-                       'right': 70.0, 'top': 50.0}
+            'limits': {'left': 0.0, 'bottom': 0.0,
+                       'right': 70.0, 'top': 0.0}
         }, gravity=(0, -33.0))
         self.listen('quit')
 
@@ -50,8 +52,13 @@ class Lab(Level):
             'platformcage4': PlatformCage4,
             'characterstart': Start,
             'end': Flag,
-            'spades': Spades,
-            'pillevolutionb': GrassHopperPill
+            'spadesdown': SpadesDown,
+            'spadesleft': SpadesDown,
+            'spadesright': SpadesDown,
+            'spadesdown': SpadesDown,
+            'pillevolutiona': TinyRatPill,
+            'pillevolutionb': GrassHopperPill,
+            'pillevolutiond': LumiPill
         }
 
         # Add background (filled with grey)
@@ -71,7 +78,6 @@ class Lab(Level):
 
     def add_platform(self, chunk_id, data):
         if chunk_id in self._chunks:
-            print chunk_id
             chunk = self._chunks[chunk_id](data)
             if chunk_id == "characterstart":
                 self._start = chunk
@@ -85,12 +91,10 @@ class Lab(Level):
             super(Lab, self).add_chunk(chunk, self.BACKGROUND)
 
     def add_rat(self):
-        rat_datas = self.loader().get_width_from_ratio('rat.stance_01', self._start.height())
-
-        self._rat = Rat(position=(self._start.x(), self._start.y()), size=(rat_datas[0], rat_datas[1]), level=self)
+        self._rat = Rat(position=(self._start.x(), self._start.y()), level=self, base_height=self._start.height())
         # self._rat.set_hitbox({'left': 17.5, 'top': 3.0})
         self.add_chunk(self._rat, self.SPRITES)
-        self.world().camera().watch(self._rat)
+        self.watch_rat()
         # self.world().camera().watch(self._rat, -rat_datas[1]*1.5)
 
     @classmethod
@@ -114,17 +118,31 @@ class Lab(Level):
         self.pill_spawn()
 
         
-    
+    def change_rat(self, new_rat):
+        self.remove_chunk(self._rat)
+        self._rat = new_rat
+        self.add_chunk(self._rat, self.SPRITES)
+        self.watch_rat()
+
     def pill_spawn(self):
         for pill in Pill.pill_instances['grasshopper']:
             if self._rat.contains(pill) and self._rat.__class__ != GrassHopper:
-                new_rat = GrassHopper(position=(self._rat.position()[0], self._rat.position()[1]), size=self._rat.size(), level=self)
-                self.remove_chunk(self._rat)
+                print self._start.height()
+                new_rat = GrassHopper(position=(self._rat.position()[0], self._rat.position()[1]), level=self, base_height=self._start.height())
+                self.change_rat(new_rat)
 
-                self._rat = new_rat
-                self.add_chunk(self._rat, self.SPRITES)
-                rat_datas = self.loader().get_width_from_ratio('rat.stance_01', self._start.height())
-                self.world().camera().watch(self._rat)
+        for pill in Pill.pill_instances['tinyrat']:
+            if self._rat.contains(pill) and self._rat.__class__ != TinyRat:
+                new_rat = TinyRat(position=(self._rat.position()[0], self._rat.position()[1]), level=self, base_height=self._start.height())
+                self.change_rat(new_rat)
+
+        for pill in Pill.pill_instances['lumi']:
+            if self._rat.contains(pill) and self._rat.__class__ != Lumi:
+                new_rat = Lumi(position=(self._rat.position()[0], self._rat.position()[1]), level=self, base_height=self._start.height())
+                self.change_rat(new_rat) 
+    
+    def watch_rat(self):
+        self.world().camera().watch(self._rat)
 
 class Lab1(Lab):
     def __init__(self, resolution, navigator):
@@ -140,7 +158,31 @@ class Lab2(Lab):
     def __init__(self, resolution, navigator):
         super(Lab2, self).__init__(resolution, navigator)
         self._level = self.loader().get_raw_resource('svg_json.level_2')
-        self._next_level = None
+        self._next_level = Lab3
         self.add_chunks()
         self.add_rat()
         # self.load_music()
+
+class Lab3(Lab):
+    def __init__(self, resolution, navigator):
+        super(Lab3, self).__init__(resolution, navigator)
+        self._level = self.loader().get_raw_resource('svg_json.level_3')
+        self._next_level = Lab4
+        self.add_chunks()
+        self.add_rat()
+
+class Lab4(Lab):
+    def __init__(self, resolution, navigator):
+        super(Lab4, self).__init__(resolution, navigator)
+        self._level = self.loader().get_raw_resource('svg_json.level_4')
+        self._next_level = Lab5
+        self.add_chunks()
+        self.add_rat()
+
+class Lab5(Lab):
+    def __init__(self, resolution, navigator):
+        super(Lab5, self).__init__(resolution, navigator)
+        self._level = self.loader().get_raw_resource('svg_json.level_5')
+        self._next_level = None
+        self.add_chunks()
+        self.add_rat()

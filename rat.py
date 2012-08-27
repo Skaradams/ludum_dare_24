@@ -1,13 +1,19 @@
 from bloodyhell.world.actor import Actor
 from platforms.hurtingfloor import *
+from bloodyhell.resourceloader import ResourceLoader
 
 class Rat(Actor):
 
-    def __init__(self, position, size, level, evolution='rat'):
+    def __init__(self, position, level, evolution='rat', size=None, base_height=None):
+       
+        if size == None:
+            print "Ca va dans Rat",base_height
+            size = ResourceLoader().get_width_from_ratio('rat.stance_01', base_height)
+
         super(Rat, self).__init__(
             evolution, 'stance', (position[0], position[1]), size
         )
-        print self
+
         self._level = level
         self._walk_vel = 5.0
         self._jump_vel = 17.5
@@ -36,7 +42,6 @@ class Rat(Actor):
         elif self._left_on:
             self._x_vel = -self._walk_vel
         self.set_x_velocity(self._x_vel * self._run_multiple)
-        print self.get_y_velocity()
 
     def on_right_pressed(self):
         self._right_on = True
@@ -112,7 +117,8 @@ class Rat(Actor):
     def on_lshift_pressed(self):
         self._run_multiple = 4
         self._running = True
-        self._pace = 'run'
+        if self._right_on or self._left_on:
+            self._pace = 'run'
         self.animate()
 
     def on_lshift_released(self):
@@ -125,7 +131,8 @@ class Rat(Actor):
         self.animate()
 
     def on_collision(self, chunk, point):
-        if chunk.__class__ == Spades:
+        spades = [SpadesDown, SpadesUp, SpadesLeft, SpadesRight]
+        if chunk.__class__ in spades:
             self._level.reset(self._level.resolution(), self._level.navigator())
         else:
             if not self._right_on and not self._left_on:
