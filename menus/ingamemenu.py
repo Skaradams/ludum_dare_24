@@ -10,15 +10,14 @@ from bloodyhell.game import Game
 
 from jukebox import JukeBox
 
+
 class InGameMenu(View):
 
     CHOICES = ['resume', 'back', 'quit']
 
     def __init__(self):
         super(InGameMenu, self).__init__()
-        self._interface = Interface(
-            os.path.join(settings.INTERFACES_DIR, 'ingamemenu.xml')
-        )
+        self._interface = Interface('interfaces.ingamemenu')
         self.add_layer(self._interface, 100)
         self._choice = 0
         self._up_tap = False
