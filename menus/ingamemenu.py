@@ -37,7 +37,7 @@ class InGameMenu(View):
         item = self._interface.get(self.CHOICES[self._choice])
         item.style('color', '#becbcd')
         cursor = self._interface.get('cursor')
-        top = 35 + self._choice * 20
+        top = 15 + self._choice * 20
         cursor.style('top', '%d%%' % top)
 
     def tap_down(self):

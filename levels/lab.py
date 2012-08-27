@@ -84,6 +84,7 @@ class Lab(Level):
             Layer(position=(0, 0), size=resolution).fill('191919'),
             self.BACKGROUND
         )
+        self.listen_key('escape')
 
 
     def on_quit(self, event):
@@ -109,7 +110,7 @@ class Lab(Level):
 
             if isinstance(chunk, BackLayer):
                 layer_pos = self.BACKGROUND
-                
+
             else:
                 layer_pos = self.BACKGROUND_1
             super(Lab, self).add_chunk(chunk, layer_pos)
@@ -170,7 +171,7 @@ class Lab(Level):
                 new_rat.set_position(self._rat.position())
                 # new_rat = GrassHopper(position=(self._rat.position()[0], self._rat.position()[1]), level=self, base_height=self._start.height())
                 self.change_rat(new_rat)
-                
+
         for pill in Pill.pill_instances['tinyrat']:
             if self._rat.contains(pill) and self._rat.__class__ != TinyRat:
                 new_rat = Lab.rats['tinyrat']
@@ -182,7 +183,7 @@ class Lab(Level):
             if self._rat.contains(pill) and self._rat.__class__ != Lumi:
                 new_rat = Lab.rats['lumi']
                 new_rat.set_position(self._rat.position())
-                self.change_rat(new_rat)                
+                self.change_rat(new_rat)
 
     def check_shadows(self):
         applyshadow = False
@@ -190,7 +191,7 @@ class Lab(Level):
             if shadow.contains(self._rat) and self._rat.__class__ != Lumi:
                 applyshadow = True
 
-        if applyshadow:        
+        if applyshadow:
             self.add_layer(
                 self._shadow_layer,
                 self.NEAR_DECORATION
@@ -207,6 +208,12 @@ class Lab(Level):
         else:
             self.world().camera().set_width(rat_width * 5)
         self.world().camera().set_y_high_filter_threshold(rat_height * 8)
+
+    def on_escape_pressed(self):
+        self._navigator.push(InGameMenu())
+
+    def on_escape_released(self):
+        pass
 
 class Lab1(Lab):
     def __init__(self, resolution, navigator):
