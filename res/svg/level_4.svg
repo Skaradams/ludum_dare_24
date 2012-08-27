@@ -75,10 +75,10 @@
 <rect id="groundcage1_183_" x="7681.243" y="7052.02" stroke="#000000" stroke-miterlimit="10" width="835.364" height="305.416"/>
 <rect id="groundcage1_215_" x="6845.878" y="7052.02" stroke="#000000" stroke-miterlimit="10" width="835.366" height="305.416"/>
 <rect id="groundcage1_222_" x="5127.843" y="7052.021" stroke="#000000" stroke-miterlimit="10" width="835.367" height="305.416"/>
-<rect id="groundcage1_221_" x="6010.507" y="7052.022" stroke="#000000" stroke-miterlimit="10" width="835.367" height="305.415"/>
+<rect id="groundcage1_221_" x="6010.507" y="7052.022" stroke="#000000" stroke-miterlimit="10" width="835.368" height="305.415"/>
 <rect id="groundcage1_233_" x="4245.18" y="8427.054" stroke="#000000" stroke-miterlimit="10" width="835.366" height="305.416"/>
 <rect id="groundcage1_237_" x="5080.546" y="8426.724" stroke="#000000" stroke-miterlimit="10" width="835.366" height="305.416"/>
-<rect id="groundcage1_218_" x="6010.507" y="7357.436" stroke="#000000" stroke-miterlimit="10" width="835.367" height="305.416"/>
+<rect id="groundcage1_218_" x="6010.507" y="7357.436" stroke="#000000" stroke-miterlimit="10" width="835.368" height="305.416"/>
 <rect id="groundcage1_217_" x="5175.14" y="7357.436" stroke="#000000" stroke-miterlimit="10" width="835.367" height="305.416"/>
 <rect id="spadesdown_11_" x="5799.004" y="7321.454" fill="#C94A96" stroke="#000000" stroke-miterlimit="10" width="363.413" height="35.983"/>
 <rect id="groundcage1_227_" x="4292.476" y="7052.022" stroke="#000000" stroke-miterlimit="10" width="835.367" height="305.415"/>
@@ -92,7 +92,7 @@
 <rect id="groundcage1_262_" x="7633.942" y="9342.971" stroke="#000000" stroke-miterlimit="10" width="835.364" height="305.416"/>
 <rect id="groundcage1_275_" x="8469.311" y="9342.976" stroke="#000000" stroke-miterlimit="10" width="835.366" height="305.416"/>
 <rect id="groundcage1_274_" x="9351.974" y="9648.391" stroke="#000000" stroke-miterlimit="10" width="835.367" height="305.416"/>
-<rect id="groundcage_x27_" x="9351.974" y="9342.977" stroke="#000000" stroke-miterlimit="10" width="835.367" height="305.415"/>
+<rect id="groundcage1" x="9351.974" y="9342.977" stroke="#000000" stroke-miterlimit="10" width="835.367" height="305.415"/>
 <rect id="groundcage1_268_" x="8516.607" y="9648.391" stroke="#000000" stroke-miterlimit="10" width="835.366" height="305.416"/>
 <rect id="spadesdown_13_" x="9148.109" y="9612.408" fill="#C94A96" stroke="#000000" stroke-miterlimit="10" width="363.413" height="35.983"/>
 <rect id="groundcage4_3_" x="10187.341" y="9342.979" stroke="#000000" stroke-miterlimit="10" width="835.369" height="305.416"/>
@@ -197,7 +197,7 @@
 <rect id="groundcage3_62_" x="7681.243" y="7357.768" stroke="#000000" stroke-miterlimit="10" width="835.366" height="305.416"/>
 <rect id="groundcage3_63_" x="7633.941" y="8273.543" stroke="#000000" stroke-miterlimit="10" width="835.365" height="305.415"/>
 <rect id="groundcage3_64_" x="7633.943" y="8579.432" stroke="#000000" stroke-miterlimit="10" width="835.366" height="305.416"/>
-<rect id="groundcage3_65_" x="6751.28" y="8732.142" stroke="#000000" stroke-miterlimit="10" width="835.366" height="305.416"/>
+<rect id="groundcage3_65_" x="6751.279" y="8732.142" stroke="#000000" stroke-miterlimit="10" width="835.367" height="305.416"/>
 <rect id="groundcage3_66_" x="6751.28" y="9037.558" stroke="#000000" stroke-miterlimit="10" width="835.366" height="305.416"/>
 <rect id="groundcage3_67_" x="12788.032" y="9190.263" stroke="#000000" stroke-miterlimit="10" width="835.365" height="305.416"/>
 <rect id="groundcage3_68_" x="6751.278" y="11175.431" stroke="#000000" stroke-miterlimit="10" width="835.366" height="305.416"/>
@@ -260,7 +260,7 @@
 <rect id="groundcage2_23_" x="3504.408" y="6593.896" stroke="#000000" stroke-miterlimit="10" width="835.366" height="305.416"/>
 <rect id="groundcage2_22_" x="4339.774" y="6593.896" stroke="#000000" stroke-miterlimit="10" width="835.367" height="305.416"/>
 <rect id="groundcage2_21_" x="5175.142" y="6593.896" stroke="#000000" stroke-miterlimit="10" width="835.366" height="305.416"/>
-<rect id="groundcage2_20_" x="6010.509" y="6593.896" stroke="#000000" stroke-miterlimit="10" width="835.367" height="305.416"/>
+<rect id="groundcage2_20_" x="6010.509" y="6593.896" stroke="#000000" stroke-miterlimit="10" width="835.366" height="305.416"/>
 <rect id="groundcage2_44_" x="6845.877" y="6593.896" stroke="#000000" stroke-miterlimit="10" width="835.366" height="305.416"/>
 <rect id="groundcage2_19_" x="5127.843" y="7968.93" stroke="#000000" stroke-miterlimit="10" width="835.366" height="305.416"/>
 <rect id="groundcage2_25_" x="4292.477" y="7968.93" stroke="#000000" stroke-miterlimit="10" width="835.366" height="305.416"/>
