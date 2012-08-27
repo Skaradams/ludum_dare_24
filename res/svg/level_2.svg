@@ -5,7 +5,7 @@
 	 width="16018.5px" height="5435.21px" viewBox="0 0 16018.5 5435.21" enable-background="new 0 0 16018.5 5435.21"
 	 xml:space="preserve">
 <rect id="pillevolutionb_1_" x="1897.847" y="3205.373" fill="#FB913B" stroke="#000000" stroke-miterlimit="10" width="50.685" height="61.859"/>
-<rect id="characterstart_4_" x="263.231" y="3361.755" fill="#7CD2E2" stroke="#000000" stroke-miterlimit="10" width="85.193" height="403.363"/>
+<rect id="characterstart_4_" x="263.231" y="3333.532" fill="#7CD2E2" stroke="#000000" stroke-miterlimit="10" width="85.193" height="403.363"/>
 <rect id="groundcage1_27_" x="0" y="3741.571" stroke="#000000" stroke-miterlimit="10" width="835.366" height="305.416"/>
 <rect id="groundcage1_11_" x="835.368" y="3741.571" stroke="#000000" stroke-miterlimit="10" width="835.366" height="305.416"/>
 <rect id="groundcage1_29_" x="1670.734" y="3741.571" stroke="#000000" stroke-miterlimit="10" width="835.367" height="305.416"/>
@@ -44,7 +44,7 @@
 <rect id="end_4_" x="8650.57" y="2011.481" fill="#FBD849" stroke="#000000" stroke-miterlimit="10" width="125.633" height="201.682"/>
 <rect id="pillevolutiond_4_" x="12990.486" y="3862.036" fill="#9A549C" stroke="#F98238" stroke-miterlimit="10" width="50.684" height="61.855"/>
 <rect id="pillevolutiond_3_" x="11318.305" y="3408.366" fill="#9A549C" stroke="#F98238" stroke-miterlimit="10" width="50.684" height="61.855"/>
-<rect id="pillevolutionb_3_" x="14838.127" y="4732.502" fill="#BD5D32" stroke="#F98238" stroke-miterlimit="10" width="50.688" height="61.856"/>
+<rect id="pillevolutionb_3_" x="14840.852" y="4745.441" fill="#BD5D32" stroke="#F98238" stroke-miterlimit="10" width="50.688" height="61.856"/>
 <rect id="platformcage2_9_" x="6102.434" y="3250.84" fill="#9BCB56" stroke="#000000" stroke-miterlimit="10" width="363.413" height="206.351"/>
 <rect id="platformcage2_21_" x="5375.608" y="2631.781" fill="#9BCB56" stroke="#000000" stroke-miterlimit="10" width="363.412" height="206.354"/>
 <rect id="platformcage1_59_" x="5375.609" y="1806.374" fill="#70BF58" stroke="#000000" stroke-miterlimit="10" width="363.413" height="206.351"/>
@@ -70,7 +70,7 @@
 <rect id="pillevolutionb_2_" x="11006.301" y="3430.581" fill="#BD5D32" stroke="#F98238" stroke-miterlimit="10" width="50.686" height="61.857"/>
 <rect id="platformcage4_7_" x="1741.483" y="3535.214" fill="#535BA2" stroke="#000000" stroke-miterlimit="10" width="363.413" height="206.354"/>
 <rect id="platformcage4_13_" x="1741.483" y="3328.861" fill="#535BA2" stroke="#000000" stroke-miterlimit="10" width="363.413" height="206.353"/>
-<rect id="pillevolutionb_4_" x="8401.494" y="4665.021" fill="#FB913B" stroke="#000000" stroke-miterlimit="10" width="50.682" height="61.859"/>
+<rect id="pillevolutionb_4_" x="8401.496" y="4626.897" fill="#FB913B" stroke="#000000" stroke-miterlimit="10" width="50.682" height="61.859"/>
 <rect id="platformcage4_14_" x="7518.301" y="4810.536" fill="#535BA2" stroke="#000000" stroke-miterlimit="10" width="363.413" height="206.352"/>
 <rect id="platformcage4_15_" x="8245.131" y="4810.536" fill="#535BA2" stroke="#000000" stroke-miterlimit="10" width="363.412" height="206.352"/>
 <rect id="platformcage4_16_" x="8971.955" y="4809.22" fill="#535BA2" stroke="#000000" stroke-miterlimit="10" width="363.413" height="206.352"/>
@@ -199,6 +199,8 @@
 	<rect id="groundcage1_17_" x="9236.332" y="2824" stroke="#000000" stroke-miterlimit="10" width="835.367" height="305.42"/>
 	<rect id="groundcage1_16_" x="9236.332" y="2518.582" stroke="#000000" stroke-miterlimit="10" width="835.363" height="305.418"/>
 	<rect id="groundcage1_15_" x="15183.133" y="2976.71" stroke="#000000" stroke-miterlimit="10" width="835.367" height="305.415"/>
+	
+		<rect id="groundcage1_72_" x="15183.133" y="2671.292" stroke="#000000" stroke-miterlimit="10" width="835.367" height="305.415"/>
 	<rect id="groundcage1_12_" x="7570.127" y="1907.747" stroke="#000000" stroke-miterlimit="10" width="835.367" height="305.416"/>
 	<rect id="groundcage1_6_" x="7570.127" y="1602.328" stroke="#000000" stroke-miterlimit="10" width="835.367" height="305.419"/>
 	<rect id="groundcage1_5_" x="7570.127" y="1296.912" stroke="#000000" stroke-miterlimit="10" width="835.367" height="305.416"/>
@@ -208,6 +210,12 @@
 	<rect id="groundcage1_71_" x="7570.127" y="75.246" stroke="#000000" stroke-miterlimit="10" width="835.367" height="305.416"/>
 	<rect id="groundcage1_3_" x="15183.133" y="3892.962" stroke="#000000" stroke-miterlimit="10" width="835.367" height="305.424"/>
 	<rect id="groundcage1_2_" x="15183.133" y="3282.125" stroke="#000000" stroke-miterlimit="10" width="835.367" height="305.419"/>
+	
+		<rect id="groundcage1_75_" x="15183.133" y="2066.369" stroke="#000000" stroke-miterlimit="10" width="835.367" height="305.415"/>
+	
+		<rect id="groundcage1_74_" x="15183.133" y="1760.951" stroke="#000000" stroke-miterlimit="10" width="835.367" height="305.415"/>
+	
+		<rect id="groundcage1_73_" x="15183.133" y="2371.784" stroke="#000000" stroke-miterlimit="10" width="835.367" height="305.419"/>
 	<rect id="groundcage1" x="15183.133" y="3587.544" stroke="#000000" stroke-miterlimit="10" width="835.367" height="305.42"/>
 </g>
 </svg>
