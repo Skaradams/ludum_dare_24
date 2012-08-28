@@ -1,0 +1,10 @@
+<interface>
+    <label id="resume" text="Thanks for suffering :)" style="width:100%;height: 50%; left: 15%;top: 20%; font-size: 40; color: #becbcd" />
+    <label id="back" text="Team 90s Movie Lovers :" style="width:100%;height: 50%; left: 20%;top: 40%; font-size: 30; color: #469638" />
+    <label id="quit" text="David(@_dawi_) : Leader / Music composer" style="width:100%;height: 50%; left: 25%;top: 60%; font-size: 20; color: #469638" />
+    <label id="quit" text="Jeremy(@Jeremy_Eg) : Level Designer" style="width:100%;height: 50%; left: 25%;top: 70%; font-size: 20; color: #469638" />
+    <label id="quit" text="Romain(@singe_espace) : Graphic designer" style="width:100%;height: 50%; left: 25%;top: 80%; font-size: 20; color: #469638" />
+    <label id="quit" text="Damien(@skaradams) : Game developer" style="width:100%;height: 50%; left: 25%;top: 90%; font-size: 20; color: #469638" />
+    <section id="cursor" style="width:20%;height: auto; left: 3%;top: 15%; background-image: rat.stance_01" />
+    <section id="cursor" style="width:20%;height: auto; left: 95%;top: 15%; background-image: lumi.stance_left_01" />
+</interface>

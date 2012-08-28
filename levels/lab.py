@@ -50,7 +50,7 @@ class Lab(Level):
         self._next_level = None
         self._resolution = resolution
         self._navigator = navigator
-        self._frame_limit = 3
+        self._frame_limit = 1
         self._frame_count = 0
 
         self._chunks = {
@@ -148,9 +148,13 @@ class Lab(Level):
 
     def on_frame(self, delta):
         super(Lab, self).on_frame(delta)
-        if self._rat.contains(self._end) and self._next_level != None:
-            self._navigator.set_current_view(self._next_level(self._resolution, self._navigator))
-            self._navigator.set_current_view(ComicStrip(self._next_level(self._resolution, self._navigator), self._strip_id))
+        if self._rat.contains(self._end): 
+            if self._next_level != None:
+                self._navigator.set_current_view(self._next_level(self._resolution, self._navigator))
+                self._navigator.set_current_view(ComicStrip(self._next_level(self._resolution, self._navigator), self._strip_id))
+            else:
+                self._navigator.set_current_view(ComicStrip(None, self._strip_id))
+
         if self._frame_count == self._frame_limit:
             self.pill_spawn()
             self.check_shadows()
@@ -168,6 +172,7 @@ class Lab(Level):
     def pill_spawn(self):
         for pill in Pill.pill_instances['grasshopper']:
             if self._rat.contains(pill) and self._rat.__class__ != GrassHopper:
+                print "rat contains pill"
                 new_rat = Lab.rats['grasshopper']
                 new_rat.set_position(self._rat.position())
                 # new_rat = GrassHopper(position=(self._rat.position()[0], self._rat.position()[1]), level=self, base_height=self._start.height())
@@ -221,7 +226,7 @@ class Lab1(Lab):
         super(Lab1, self).__init__(resolution, navigator, 'static.comic_strip_2')
 
         self._level = self.loader().get_raw_resource('svg_json.level_1')
-        self._next_level = Lab2
+        self._next_level = Lab5
         self.add_chunks()
 
         Lab.rats['normal'] = Rat(position=(self._start.x(), self._start.y()), level=self, base_height=self._start.height())

@@ -7,6 +7,7 @@ from bloodyhell.view import Layer
 from bloodyhell.widget.interface import Interface
 from bloodyhell.widget import Widget
 
+
 class ComicStrip(View):
     def __init__(self, level, image_id):
         super(ComicStrip, self).__init__()
@@ -52,7 +53,10 @@ class ComicStrip(View):
         pass
 
     def on_return_pressed(self):
-        self._navigator.set_current_view(self._level)
-
+        from endgame import EndGame
+        if self._level:
+            self._navigator.set_current_view(self._level)
+        else:
+            self._navigator.set_current_view(EndGame())
     def on_return_released(self):
         pass

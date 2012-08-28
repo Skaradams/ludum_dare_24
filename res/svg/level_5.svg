@@ -11,7 +11,6 @@
 <rect id="groundcage3_1_" x="2647.439" y="10998.069" width="835.366" height="305.416"/>
 <rect id="groundcage3_2_" x="2647.439" y="10692.653" width="835.366" height="305.416"/>
 <rect id="groundcage3_3_" x="2647.439" y="10387.237" width="835.366" height="305.416"/>
-<rect id="groundcage3_4_" x="2647.439" y="10081.821" width="835.366" height="305.416"/>
 <rect id="groundcage3_9_" x="141.341" y="11303.485" width="835.366" height="305.416"/>
 <rect id="groundcage3_8_" x="141.341" y="10998.069" width="835.366" height="305.416"/>
 <rect id="groundcage3_7_" x="141.341" y="10692.653" width="835.366" height="305.416"/>
@@ -129,7 +128,6 @@
 <rect id="spadesdown_29_" x="13837.654" y="7907.921" fill="#C94A96" width="363.41" height="35.982"/>
 <rect id="spadesdown_30_" x="14201.065" y="7907.921" fill="#C94A96" width="363.41" height="35.982"/>
 <rect id="end_2_" x="1606.369" y="11201.696" fill="#FBD849" width="251.266" height="403.363"/>
-<rect id="pillevolutiond_1_" x="3875.146" y="7031.613" fill="#9A549C" width="50.684" height="61.855"/>
 <rect id="groundcage1_131_" x="5153.534" y="6514.558" width="835.364" height="305.418"/>
 <rect id="groundcage3_114_" x="5153.533" y="4987.476" width="835.364" height="305.418"/>
 <rect id="platformcage2_11_" x="3737.68" y="7181.797" fill="#9BCB56" width="363.412" height="206.352"/>
@@ -400,11 +398,7 @@
 <rect id="groundcage2_35_" x="11836.451" y="3.093" width="835.363" height="305.415"/>
 <rect id="groundcage2_39_" x="15177.91" y="3.094" width="835.364" height="305.416"/>
 <rect id="groundcage2_38_" x="14342.545" y="3.094" width="835.363" height="305.415"/>
-<rect id="backlayer2_1_" x="11601.65" y="10058.369" fill="#FDC245" width="583.004" height="411.25"/>
 <rect id="backlayer2_4_" x="8203.491" y="4889.749" fill="#FDC245" width="583.004" height="411.25"/>
-<rect id="backlayer3" x="10766.283" y="10677.428" fill="#F8A0C3" width="583.003" height="411.25"/>
-<rect id="backlayer4_1_" x="11601.65" y="10677.428" fill="#FEE85D" width="583.003" height="411.25"/>
-<rect id="backlayer1_323_" x="10766.283" y="10058.369" fill="#48C4C4" width="583.003" height="411.25"/>
 <rect id="backlayer4_2_" x="2064.433" y="10081.821" fill="#FEE85D" width="583.003" height="411.25"/>
 <rect id="backlayer1_1_" x="5043.743" y="11097.86" fill="#48C4C4" width="583.003" height="411.25"/>
 <rect id="backlayer1_2_" x="1440.5" y="10639.736" fill="#48C4C4" width="583.003" height="411.25"/>

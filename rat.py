@@ -5,7 +5,9 @@ from bloodyhell.resourceloader import ResourceLoader
 
 class Rat(Actor):
 
-    def __init__(self, position, level, evolution='rat', size=None, base_height=None, track='music.im_gonna_change'):
+    def __init__(self, position, level, evolution='rat', 
+                 size=None, base_height=None, track='music.im_gonna_change', 
+                 hitbox={'left': 20.0, 'top': 5.0}):
        
         if size == None:
             size = ResourceLoader().get_width_from_ratio('rat.stance_01', base_height)
@@ -25,7 +27,7 @@ class Rat(Actor):
         self.listen_key('left')
         self.listen_key('space')
         self.listen_key('lshift')
-        self.set_hitbox({'left': 17.5, 'top': 3.0})
+        self.set_hitbox(hitbox)
         JukeBox().play(track)
 
 
