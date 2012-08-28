@@ -226,7 +226,7 @@ class Lab1(Lab):
         super(Lab1, self).__init__(resolution, navigator, 'static.comic_strip_2')
 
         self._level = self.loader().get_raw_resource('svg_json.level_1')
-        self._next_level = Lab5
+        self._next_level = Lab2
         self.add_chunks()
 
         Lab.rats['normal'] = Rat(position=(self._start.x(), self._start.y()), level=self, base_height=self._start.height())
