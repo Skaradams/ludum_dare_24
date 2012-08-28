@@ -126,6 +126,7 @@ class Lab(Level):
         self._rat.set_position((self._start.x(), self._start.y()))
         self.watch_rat()
         # self.world().camera().watch(self._rat, -rat_datas[1]*1.5)
+        self._rat.play_track()
 
     def reset_rats(self):
         Lab.rats['normal'].reset(self)
@@ -167,7 +168,7 @@ class Lab(Level):
         self._rat = new_rat
         self.add_chunk(self._rat, self.SPRITES)
         self.watch_rat()
-
+        self._rat.play_track()
 
     def pill_spawn(self):
         for pill in Pill.pill_instances['grasshopper']:

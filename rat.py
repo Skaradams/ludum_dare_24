@@ -28,8 +28,10 @@ class Rat(Actor):
         self.listen_key('space')
         self.listen_key('lshift')
         self.set_hitbox(hitbox)
-        JukeBox().play(track)
+        self._track = track
 
+    def play_track(self):
+        JukeBox().play(self._track)
 
     def update(self):
         super(Rat, self).update()
