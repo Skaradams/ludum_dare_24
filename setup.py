@@ -150,12 +150,12 @@ class BuildExe:
             author = self.author_name,
             author_email = self.author_email,
             license = self.license,
-            console = [self.script],
-            #windows = [{
-            #    'script': self.script,
-            #    'icon_resources': [(0, self.icon_file)],
-            #    'copyright': self.copyright
-            #}],
+            #console = [self.script],
+            windows = [{
+                'script': self.script,
+                'icon_resources': [(0, self.icon_file)],
+                'copyright': self.copyright
+            }],
             # targets to build
 
             options = {'py2exe': {'optimize': 2, 'bundle_files': 1, 'compressed': True, \
